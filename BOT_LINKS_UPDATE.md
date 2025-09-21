@@ -22,7 +22,7 @@
 ### Обновленные ссылки:
 
 1. **Основной бот**: `https://t.me/FitnessPlusAI_Bot`
-2. **Техподдержка**: `https://t.me/FitnessPlusAI_support`
+2. **Техподдержка**: `https://t.me/FitnessPlusAI_support_bot`
 
 ### Проверка:
 
