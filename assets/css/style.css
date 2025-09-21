@@ -81,7 +81,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(255, 255, 255, 0.35);
     z-index: -1;
     pointer-events: none;
 }
@@ -956,8 +956,34 @@ p {
         padding: 0 var(--spacing-md);
     }
     
+    .nav {
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+    
     .nav__menu {
         display: none;
+    }
+    
+    .nav__brand {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .nav__title {
+        font-size: var(--font-size-base);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .nav__actions {
+        flex-shrink: 0;
+    }
+    
+    .nav__actions .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: var(--font-size-sm);
     }
     
     .hero {
@@ -1016,6 +1042,28 @@ p {
 }
 
 @media (max-width: 480px) {
+    .nav {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .nav__brand {
+        gap: var(--spacing-xs);
+    }
+    
+    .nav__logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .nav__title {
+        font-size: var(--font-size-sm);
+    }
+    
+    .nav__actions .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
+    }
+    
     .hero__title {
         font-size: var(--font-size-2xl);
     }
