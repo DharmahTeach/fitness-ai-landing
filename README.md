@@ -198,7 +198,7 @@ Header always set X-Content-Type-Options "nosniff"
 ## Поддержка
 
 - **Email**: support@fitness-ai.ru
-- **Telegram**: @FitnessPlusAI_support
+- **Telegram**: @FitnessPlusAI_support_bot
 - **Документация**: [docs.fitness-ai.ru](http://docs.fitness-ai.ru)
 
 ## Лицензия
