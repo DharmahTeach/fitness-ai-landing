@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initAnimations();
     initAnalytics();
+    initBotNameCopy();
 });
 
 // Smooth scrolling for navigation links
@@ -315,3 +316,35 @@ function initPerformanceMonitoring() {
 
 // Initialize performance monitoring
 initPerformanceMonitoring();
+
+// Bot name copy functionality
+function initBotNameCopy() {
+    const botNameElements = document.querySelectorAll('.bot-name');
+    
+    botNameElements.forEach(element => {
+        element.addEventListener('click', function() {
+            const botName = this.getAttribute('data-bot');
+            
+            if (botName) {
+                copyToClipboard(botName);
+                
+                // Visual feedback
+                this.style.background = 'rgba(16, 185, 129, 0.2)';
+                this.style.borderColor = '#10b981';
+                this.style.color = '#10b981';
+                
+                // Reset after animation
+                setTimeout(() => {
+                    this.style.background = '';
+                    this.style.borderColor = '';
+                    this.style.color = '';
+                }, 1000);
+                
+                // Track the copy event
+                trackEvent('bot_name_copy', {
+                    bot_name: botName
+                });
+            }
+        });
+    });
+}
