@@ -637,6 +637,7 @@ p {
     gap: var(--spacing-2xl);
     max-width: 1200px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 @media (max-width: 1024px) {
@@ -653,6 +654,8 @@ p {
 
 .pricing-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: var(--spacing-2xl);
     background: var(--background);
     border: 2px solid var(--border-color);
@@ -676,23 +679,28 @@ p {
     box-shadow: var(--shadow-lg);
 }
 
+.pricing-card__badge-slot {
+    min-height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-xs);
+}
+
 .pricing-card__badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
     background: var(--gradient-primary);
     color: white;
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--radius-lg);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .pricing-card__title {
     font-size: var(--font-size-2xl);
     font-weight: 600;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     color: var(--text-primary);
 }
 
@@ -700,8 +708,17 @@ p {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    flex-wrap: nowrap;
     gap: var(--spacing-xs);
+    min-height: 3.5rem;
     margin-bottom: var(--spacing-2xl);
+}
+
+.pricing-card__price--promo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem var(--spacing-sm);
+    min-height: 4rem;
 }
 
 .pricing-card__currency {
@@ -716,10 +733,10 @@ p {
 }
 
 .pricing-card__old-price {
-    margin-right: var(--spacing-sm);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     color: var(--text-muted);
     text-decoration: line-through;
+    margin-right: var(--spacing-xs);
 }
 
 .pricing-card__promo-price {
@@ -732,7 +749,9 @@ p {
 }
 
 .pricing-card__features {
-    margin-bottom: var(--spacing-2xl);
+    flex: 1;
+    margin-bottom: var(--spacing-lg);
+    min-height: 0;
 }
 
 .pricing-card__feature {
@@ -753,6 +772,7 @@ p {
 .pricing-card__button {
     width: 100%;
     justify-content: center;
+    margin-top: auto;
 }
 
 /* Reviews Section */
