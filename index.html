@@ -106,6 +106,17 @@
         </nav>
     </header>
 
+    <div class="promo-banner" id="promo-banner">
+        <div class="container">
+            <div class="promo-banner__content">
+                <span class="promo-banner__fire">🔥</span>
+                <span class="promo-banner__text">АКЦИЯ ДО 31 МАРТА!</span>
+                <span class="promo-banner__countdown" id="promo-countdown"></span>
+                <a href="#pricing" class="promo-banner__link">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -177,46 +188,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partner Promo Section -->
-    <section class="partner-promo">
-        <div class="container partner-promo__grid">
-            <div class="partner-promo__content">
-                <p class="partner-promo__tag">Дружим с Body Metrics</p>
-                <h2>AI-диагностика фигуры, которая усиливает ваш план</h2>
-                <p>
-                    Наши коллеги из Body Metrics (@BodyMetrics_bot) анализируют фигуру по фото, фиксируют осанку
-                    и пропорции и мгновенно выдают рекомендации. Подключите их, чтобы видеть, как тренировки по
-                    FitnessAI меняют ваше тело в реальном времени.
-                </p>
-                <ul class="partner-promo__list">
-                    <li>🔍 Глубокий анализ осанки, пропорций и мышечного тонуса за 30 секунд</li>
-                    <li>🧠 Умные подсказки, как визуально улучшить форму ещё до следующей тренировки</li>
-                    <li>📊 Хранение истории и PDF-отчёты, чтобы сравнивать «до/после» без фотостудии</li>
-                </ul>
-                <div class="partner-promo__actions">
-                    <a href="https://photo.fitness-ai.ru/" class="btn btn--secondary" target="_blank">Посмотреть Body Metrics</a>
-                    <a href="https://t.me/BodyMetrics_bot" class="btn btn--primary" target="_blank">Запустить Body Metrics</a>
-                </div>
-                <p class="partner-promo__footnote">
-                    Идеальный дуэт: Body Metrics показывает, какие зоны требуют внимания, а FitnessAI сразу подстраивает
-                    тренировочный план и питание под новые цели.
-                </p>
-            </div>
-            <div class="partner-promo__card">
-                <h3>Как использовать вместе</h3>
-                <ol>
-                    <li><span>1</span> Сделайте быстрый анализ фигуры в Body Metrics и сохраните отчёт.</li>
-                    <li><span>2</span> Передайте цели в FitnessAI — бот соберёт тренировку и меню под конкретные метрики.</li>
-                    <li><span>3</span> Повторяйте анализ каждые 2-3 недели, чтобы видеть прогресс и корректировать план.</li>
-                </ol>
-                <div class="partner-promo__highlight">
-                    <p>🎯 Комбо-преимущество</p>
-                    <strong>AI-план + AI-диагностика = быстрее к цели</strong>
                 </div>
             </div>
         </div>
@@ -395,14 +366,13 @@
                         Начать бесплатно
                     </a>
                 </div>
-                <div class="pricing-card pricing-card--featured">
-                    <div class="pricing-card__badge">Популярный</div>
+                <div class="pricing-card">
                     <div class="pricing-card__header">
-                        <h3 class="pricing-card__title">Премиум</h3>
+                        <h3 class="pricing-card__title">Месячная</h3>
                         <div class="pricing-card__price">
                             <span class="pricing-card__currency">₽</span>
                             <span class="pricing-card__amount">300</span>
-                            <span class="pricing-card__period">/месяц</span>
+                            <span class="pricing-card__period">/30 дней</span>
                         </div>
                     </div>
                     <div class="pricing-card__features">
@@ -410,53 +380,57 @@
                             <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                             </svg>
-                            Всё из бесплатного тарифа
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            Планы на 30 дней, до 50 в месяц
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            Обновление плана по результатам — бот объясняет, что изменил и почему
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            Анализ фото еды — калории и БЖУ в дневник
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            Режим персонального тренера — без ограничений на диалог
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            После каждой тренировки — «учту при следующей коррекции плана»
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            Еженедельный дайджест с вопросом «оставить план или адаптировать?» и экспорт в PDF
-                        </div>
-                        <div class="pricing-card__feature">
-                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                            </svg>
-                            Челленджи
+                            Всё из бесплатного + планы на 30 дней, анализ фото, ИИ без лимита
                         </div>
                     </div>
-                    <a href="https://t.me/FitnessPlusAI_Bot" class="pricing-card__button btn btn--primary" target="_blank">
-                        Попробовать премиум
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=premium" class="pricing-card__button btn btn--secondary" target="_blank">
+                        Активировать подписку
+                    </a>
+                </div>
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-card__badge promo-badge" id="pricing-promo-badge">Экономия 34%</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Годовая</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__old-price">3000 ₽</span>
+                            <span class="pricing-card__currency">₽</span>
+                            <span class="pricing-card__amount pricing-card__promo-price">1990</span>
+                            <span class="pricing-card__period">/365 дней</span>
+                        </div>
+                    </div>
+                    <div class="pricing-card__features">
+                        <div class="pricing-card__feature">
+                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                            Всё из месячного тарифа на год
+                        </div>
+                    </div>
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=premium" class="pricing-card__button btn btn--primary" target="_blank">
+                        Активировать подписку
+                    </a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card__badge promo-badge" id="pricing-promo-badge-lifetime">Лучшее предложение</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Пожизненная</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__old-price">10 000 ₽</span>
+                            <span class="pricing-card__currency">₽</span>
+                            <span class="pricing-card__amount pricing-card__promo-price">6990</span>
+                            <span class="pricing-card__period">/навсегда</span>
+                        </div>
+                    </div>
+                    <div class="pricing-card__features">
+                        <div class="pricing-card__feature">
+                            <svg class="pricing-card__check" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                            Premium навсегда, без продлений
+                        </div>
+                    </div>
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=premium" class="pricing-card__button btn btn--primary" target="_blank">
+                        Активировать подписку
                     </a>
                 </div>
             </div>
@@ -560,6 +534,46 @@
                             <div class="review-card__role">Екатеринбург</div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Promo Section -->
+    <section class="partner-promo">
+        <div class="container partner-promo__grid">
+            <div class="partner-promo__content">
+                <p class="partner-promo__tag">Дружим с Body Metrics</p>
+                <h2>AI-диагностика фигуры, которая усиливает ваш план</h2>
+                <p>
+                    Наши коллеги из Body Metrics (@BodyMetrics_bot) анализируют фигуру по фото, фиксируют осанку
+                    и пропорции и мгновенно выдают рекомендации. Подключите их, чтобы видеть, как тренировки по
+                    FitnessAI меняют ваше тело в реальном времени.
+                </p>
+                <ul class="partner-promo__list">
+                    <li>🔍 Глубокий анализ осанки, пропорций и мышечного тонуса за 30 секунд</li>
+                    <li>🧠 Умные подсказки, как визуально улучшить форму ещё до следующей тренировки</li>
+                    <li>📊 Хранение истории и PDF-отчёты, чтобы сравнивать «до/после» без фотостудии</li>
+                </ul>
+                <div class="partner-promo__actions">
+                    <a href="https://photo.fitness-ai.ru/" class="btn btn--secondary" target="_blank">Посмотреть Body Metrics</a>
+                    <a href="https://t.me/BodyMetrics_bot" class="btn btn--primary" target="_blank">Запустить Body Metrics</a>
+                </div>
+                <p class="partner-promo__footnote">
+                    Идеальный дуэт: Body Metrics показывает, какие зоны требуют внимания, а FitnessAI сразу подстраивает
+                    тренировочный план и питание под новые цели.
+                </p>
+            </div>
+            <div class="partner-promo__card">
+                <h3>Как использовать вместе</h3>
+                <ol>
+                    <li><span>1</span> Сделайте быстрый анализ фигуры в Body Metrics и сохраните отчёт.</li>
+                    <li><span>2</span> Передайте цели в FitnessAI — бот соберёт тренировку и меню под конкретные метрики.</li>
+                    <li><span>3</span> Повторяйте анализ каждые 2-3 недели, чтобы видеть прогресс и корректировать план.</li>
+                </ol>
+                <div class="partner-promo__highlight">
+                    <p>🎯 Комбо-преимущество</p>
+                    <strong>AI-план + AI-диагностика = быстрее к цели</strong>
                 </div>
             </div>
         </div>
