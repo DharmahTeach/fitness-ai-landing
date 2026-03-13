@@ -14,29 +14,35 @@ document.addEventListener('DOMContentLoaded', function() {
 // Promo countdown until 31 March 2026 23:59:59 MSK
 function initPromoCountdown() {
     const end = new Date('2026-03-31T23:59:59+03:00').getTime();
-    const countdownEl = document.getElementById('promo-countdown');
+    const bannerCountdown = document.getElementById('promo-countdown');
     const bannerEl = document.getElementById('promo-banner');
-    const badgeEl = document.getElementById('pricing-promo-badge');
-    const badgeLifetimeEl = document.getElementById('pricing-promo-badge-lifetime');
+    const timerEl = document.getElementById('promo-timer');
+    const daysEl = document.getElementById('promo-days');
+    const hoursEl = document.getElementById('promo-hours');
+    const minsEl = document.getElementById('promo-mins');
+
+    function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
     function tick() {
         const now = Date.now();
         const timeLeft = end - now;
         if (timeLeft <= 0) {
-            if (countdownEl) countdownEl.textContent = 'Акция завершена';
             if (bannerEl) bannerEl.style.display = 'none';
-            if (badgeEl) badgeEl.style.display = 'none';
-            if (badgeLifetimeEl) badgeLifetimeEl.style.display = 'none';
+            if (timerEl) timerEl.style.display = 'none';
             return;
         }
         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        if (countdownEl) {
-            countdownEl.textContent = days > 0
-                ? `Осталось ${days} дн.`
-                : `Осталось ${hours} ч ${mins} мин`;
+
+        if (bannerCountdown) {
+            bannerCountdown.textContent = days > 0
+                ? `Осталось ${days} дн. ${hours} ч`
+                : `${hours} ч ${mins} мин`;
         }
+        if (daysEl) daysEl.textContent = pad(days);
+        if (hoursEl) hoursEl.textContent = pad(hours);
+        if (minsEl) minsEl.textContent = pad(mins);
     }
     tick();
     setInterval(tick, 1000);
