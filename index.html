@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitnessAI Bot — ИИ-тренер, который видит твоё тело | Telegram</title>
-    <meta name="description" content="Единая AI-экосистема FitnessAI × BodyMetrics: планы тренировок учитывают анализ фигуры, авто-обновление по результатам, Body Score, прогноз на 90 дней. Один Premium — два бота.">
-    <meta name="keywords" content="фитнес бот, ии тренер, тренировки телеграм, персональный план, фитнес ии, body score, анализ фигуры, единый premium">
-    
+    <meta name="theme-color" content="#6366f1">
+    <title>FitnessAI Bot — ИИ-тренер в Telegram: персональный план тренировок | фитнес-бот</title>
+    <meta name="description" content="FitnessAI Bot — персональный ИИ-тренер в Telegram. Бесплатный план тренировок и питания, тренировки в Telegram, анализ фото еды, дневник питания, ИИ для похудения. Единый Premium с BodyMetrics: Body Score и прогноз фигуры на 90 дней.">
+    <meta name="keywords" content="фитнес бот, ии тренер, тренировки в телеграм, персональный тренер онлайн, план тренировок, ии фитнес тренер, бот для тренировок, персональный план тренировок, фитнес бот с анализом фото, ии тренер для похудения, фитнес планы онлайн, body score, анализ фигуры, единый premium">
+    <meta name="author" content="FitnessAI">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://fitness-ai.ru/">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="FitnessAI × BodyMetrics — единая AI-экосистема в Telegram">
-    <meta property="og:description" content="Планы тренировок учитывают анализ фигуры. Body Score, прогноз на 90 дней, авто-обновление, единый Premium на два бота.">
+    <meta property="og:title" content="FitnessAI Bot — ИИ-тренер в Telegram с персональным планом тренировок">
+    <meta property="og:description" content="Фитнес-бот с ИИ: персональный план тренировок и питания, тренировки в Telegram, анализ фото, дневник питания. Единый Premium на два бота, Body Score и прогноз на 90 дней.">
     <meta property="og:image" content="assets/images/og-image.svg">
-    <meta property="og:url" content="http://fitness-ai.ru/">
+    <meta property="og:url" content="https://fitness-ai.ru/">
     <meta property="og:type" content="website">
-    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="FitnessAI Bot">
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FitnessAI × BodyMetrics — единая AI-экосистема">
-    <meta name="twitter:description" content="ИИ-тренер видит твою фигуру и адаптирует план. Body Score, прогноз на 90 дней, единый Premium.">
+    <meta name="twitter:title" content="FitnessAI Bot — ИИ-тренер в Telegram">
+    <meta name="twitter:description" content="ИИ-тренер видит твою фигуру и адаптирует план тренировок. Body Score, прогноз на 90 дней, единый Premium.">
     <meta name="twitter:image" content="assets/images/og-image.svg">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.svg">
-    <link rel="icon" sizes="32x32" href="assets/images/favicon.svg">
-    <link rel="icon" sizes="16x16" href="assets/images/favicon.svg">
-    
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -49,7 +54,6 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/106247373" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DB9W3HRN7"></script>
     <script>
@@ -58,16 +62,17 @@
         gtag('js', new Date());
         gtag('config', 'G-9DB9W3HRN7');
     </script>
-    
-    <!-- Structured Data -->
+
+    <!-- Structured Data: SoftwareApplication -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "FitnessAI Bot",
-        "description": "Персональный ИИ-тренер в Telegram: планы тренировок, дневник питания, запись тренировок, авто-коррекция плана по результатам",
+        "description": "Персональный ИИ-тренер в Telegram: план тренировок и питания, тренировки в Telegram, дневник питания, анализ фото еды, авто-коррекция плана по результатам, ИИ для похудения.",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "Telegram",
+        "url": "https://fitness-ai.ru/",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -80,645 +85,635 @@
         }
     }
     </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Как работает ИИ-тренер в Telegram?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ИИ-тренер анализирует ваши данные (возраст, вес, цели, опыт) и создаёт персональный план тренировок и питания. Фитнес-бот видит записанные тренировки и дневник питания, поэтому не предлагает уже сделанное, а подсказывает следующий шаг. В Premium план раз в 7 дней автоматически пересобирается по результатам недели."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Нужно ли скачивать приложение для тренировок?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Нет. Фитнес-бот работает прямо в Telegram. Найдите @FitnessPlusAI_Bot, нажмите «Старт» — и получите тренировки в Telegram без установки приложений."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Это бесплатный фитнес-бот?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да, базовый план тренировок, запись тренировок и дневник питания доступны бесплатно. Premium снимает лимиты и добавляет анализ фото еды, авто-коррекцию плана, прогноз фигуры на 90 дней и единый доступ к @BodyMetrics_bot."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Подойдёт ли ИИ-тренер для похудения?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да. ИИ фитнес-тренер строит персональный план тренировок и питания под цель «похудение», учитывает дневник питания и анализ фигуры из @BodyMetrics_bot, а в Premium считает калории и БЖУ по фото еды."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Как работает Body-aware планирование и единый Premium?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "После анализа фигуры в @BodyMetrics_bot FitnessAI получает % жира, осанку, пропорции и слабые зоны и учитывает их в плане тренировок и питания. Premium работает одновременно в обоих ботах: один платёж — Body Score, ранги, визуальный прогресс «до/после» и прогноз фигуры на 90 дней."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Безопасны ли мои данные?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да, мы соблюдаем требования по защите персональных данных. Данные хранятся безопасно, а удаление можно запросить в любой момент."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav__brand">
-                <img src="assets/images/logo.svg" alt="FitnessAI Bot" class="nav__logo">
-                <span class="nav__title">FitnessAI Bot</span>
-            </div>
-            <div class="nav__menu">
-                <a href="#features" class="nav__link">Возможности</a>
-                <a href="#pricing" class="nav__link">Тарифы</a>
-                <a href="#reviews" class="nav__link">Отзывы</a>
-                <a href="#faq" class="nav__link">FAQ</a>
-            </div>
-            <div class="nav__actions">
-                <a href="https://t.me/FitnessPlusAI_Bot" class="btn btn--primary" target="_blank">
-                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
-                    </svg>
-                    Попробовать бесплатно
-                </a>
-            </div>
-        </nav>
-    </header>
+    <a href="#hero" class="skip-link">Перейти к содержимому</a>
 
+    <!-- Promo banner -->
     <div class="promo-banner" id="promo-banner">
         <div class="container">
             <div class="promo-banner__content">
-                <span class="promo-banner__fire">🚀</span>
-                <span class="promo-banner__text">NEW: AI Fitness Ecosystem — единый Premium для FitnessAI и BodyMetrics, Body Score, прогноз на 90 дней!</span>
-                <a href="#ecosystem" class="promo-banner__cta">Узнать подробнее &darr;</a>
+                <span class="promo-banner__badge">NEW</span>
+                <span class="promo-banner__text">AI Fitness Ecosystem — единый Premium для FitnessAI и BodyMetrics, Body Score и прогноз фигуры на 90 дней</span>
+                <a href="#ecosystem" class="promo-banner__cta">Подробнее</a>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero__content">
-                <div class="hero__text">
-                    <h1 class="hero__title">
-                        ИИ-тренер, который <span class="text-gradient">видит твоё тело</span><br>
-                        в твоём Telegram
-                    </h1>
-                    <p class="hero__subtitle">
-                        Единая AI-экосистема FitnessAI × BodyMetrics: загружаешь фото — план тренировок и питания
-                        автоматически учитывает анализ фигуры. Body Score, прогноз на 90 дней, авто-обновление по
-                        результатам, дневник питания, экспорт в PDF — всё в Telegram.
-                    </p>
-                    <div class="hero__actions">
-                        <a href="https://t.me/FitnessPlusAI_Bot" class="btn btn--primary btn--large" target="_blank">
-                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
-                            </svg>
-                            Начать бесплатно
-                        </a>
-                        <a href="https://t.me/FitnessAIChannel" class="btn btn--secondary btn--large" target="_blank" rel="noopener noreferrer">
-                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
-                            </svg>
-                            Канал новостей
-                        </a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Основная навигация">
+            <a href="#hero" class="nav__brand">
+                <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" class="nav__logo" width="32" height="32">
+                <span class="nav__title">FitnessAI Bot</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <a href="#features" class="nav__link">Возможности</a>
+                <a href="#how" class="nav__link">Как работает</a>
+                <a href="#ecosystem" class="nav__link">Экосистема</a>
+                <a href="#pricing" class="nav__link">Тарифы</a>
+                <a href="#reviews" class="nav__link">Отзывы</a>
+                <a href="#faq" class="nav__link">FAQ</a>
+                <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary nav__cta" target="_blank" rel="noopener">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                    </svg>
+                    Начать бесплатно
+                </a>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__aurora" aria-hidden="true"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <span class="hero__eyebrow">
+                            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+                            ИИ-тренер в Telegram · 10 000+ пользователей
+                        </span>
+                        <h1 class="hero__title">
+                            Персональный <span class="text-gradient">ИИ-тренер</span><br>
+                            и план тренировок в Telegram
+                        </h1>
+                        <p class="hero__subtitle">
+                            FitnessAI Bot — фитнес-бот, который строит персональный план тренировок и питания,
+                            ведёт дневник питания и анализирует фото еды. А единая экосистема с @BodyMetrics_bot
+                            позволяет ИИ-тренеру видеть твою фигуру и адаптировать тренировки в Telegram под реальный прогресс.
+                        </p>
+                        <div class="hero__actions">
+                            <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary btn--large" target="_blank" rel="noopener">
+                                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                                </svg>
+                                Начать бесплатно
+                            </a>
+                            <a href="#how" class="btn btn--ghost btn--large">
+                                Как это работает
+                            </a>
+                        </div>
+                        <ul class="hero__trust">
+                            <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Без приложения</li>
+                            <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Бесплатный старт</li>
+                            <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> На русском</li>
+                        </ul>
+                        <div class="hero__stats">
+                            <div class="stat">
+                                <div class="stat__number">10 000+</div>
+                                <div class="stat__label">пользователей</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat__number">50 000+</div>
+                                <div class="stat__label">планов создано</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat__number">4.8★</div>
+                                <div class="stat__label">средний рейтинг</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hero__stats">
-                        <div class="stat">
-                            <div class="stat__number">10,000+</div>
-                            <div class="stat__label">пользователей</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat__number">50,000+</div>
-                            <div class="stat__label">планов создано</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat__number">4.8★</div>
-                            <div class="stat__label">рейтинг</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__visual">
-                    <div class="phone-mockup">
-                        <div class="phone-mockup__screen">
-                            <div class="chat-demo">
-                                <div class="chat-demo__message chat-demo__message--bot">
-                                    <div class="chat-demo__avatar">🤖</div>
-                                    <div class="chat-demo__content">
-                                        <div class="chat-demo__text">Привет! Я создам персональный план тренировок для тебя. Расскажи о своих целях!</div>
+                    <div class="hero__visual">
+                        <div class="phone-mockup">
+                            <div class="phone-mockup__notch" aria-hidden="true"></div>
+                            <div class="phone-mockup__screen">
+                                <div class="chat-demo">
+                                    <div class="chat-demo__message chat-demo__message--bot">
+                                        <div class="chat-demo__avatar" aria-hidden="true">AI</div>
+                                        <div class="chat-demo__content">
+                                            <div class="chat-demo__text">Привет! Я твой ИИ-тренер. Расскажи о цели — соберу персональный план тренировок 💪</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="chat-demo__message chat-demo__message--user">
-                                    <div class="chat-demo__content">
-                                        <div class="chat-demo__text">Хочу похудеть на 10 кг за 3 месяца</div>
+                                    <div class="chat-demo__message chat-demo__message--user">
+                                        <div class="chat-demo__content">
+                                            <div class="chat-demo__text">Хочу похудеть на 10 кг за 3 месяца</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="chat-demo__message chat-demo__message--bot">
-                                    <div class="chat-demo__avatar">🤖</div>
-                                    <div class="chat-demo__content">
-                                        <div class="chat-demo__text">Отлично! Создаю план с учетом твоих целей...</div>
-                                        <div class="chat-demo__typing">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                    <div class="chat-demo__message chat-demo__message--bot">
+                                        <div class="chat-demo__avatar" aria-hidden="true">AI</div>
+                                        <div class="chat-demo__content">
+                                            <div class="chat-demo__text">Учёл анализ фигуры из BodyMetrics: % жира и осанку. Готовлю план на неделю и дневник питания…</div>
+                                            <div class="chat-demo__typing" aria-label="ИИ печатает">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-demo__message chat-demo__message--bot">
+                                        <div class="chat-demo__avatar" aria-hidden="true">AI</div>
+                                        <div class="chat-demo__content chat-demo__content--card">
+                                            <div class="chat-demo__card-title">План готов · 7 дней</div>
+                                            <div class="chat-demo__card-row">🏋️ 4 тренировки · кардио + сила</div>
+                                            <div class="chat-demo__card-row">🥗 Питание с дефицитом калорий</div>
+                                            <div class="chat-demo__card-row">📊 Body Score: 62 → цель 75</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="hero__float hero__float--score" aria-hidden="true">
+                            <span class="hero__float-label">Body Score</span>
+                            <span class="hero__float-value">62<small>/100</small></span>
+                        </div>
+                        <div class="hero__float hero__float--fire" aria-hidden="true">
+                            <span class="hero__float-ico">🔥</span> 7 дней подряд
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Почему выбирают FitnessAI Bot</h2>
-                <p class="section-subtitle">Мощные возможности ИИ для достижения ваших фитнес-целей</p>
-            </div>
-            <div class="features__grid">
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3a3 3 0 110 6 3 3 0 010-6zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Body-Aware планирование <span class="badge-new">NEW</span></h3>
-                    <p class="feature-card__description">
-                        Сделал анализ в @BodyMetrics_bot — план тренировок и питания учитывает % жира, осанку,
-                        пропорции и слабые зоны. ИИ видит твоё тело, а не только цифры в анкете.
-                    </p>
+        <!-- Features Section -->
+        <section id="features" class="features section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Возможности</span>
+                    <h2 class="section-title">Почему выбирают фитнес-бот FitnessAI</h2>
+                    <p class="section-subtitle">Персональный ИИ-тренер, который ведёт тебя от первой тренировки в Telegram до результата</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Персонализация через ИИ</h3>
-                    <p class="feature-card__description">
-                        Искусственный интеллект анализирует ваши данные и создает уникальные планы тренировок,
-                        адаптированные под ваши цели, опыт и физические особенности.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Анализ фото еды и техники</h3>
-                    <p class="feature-card__description">
-                        Фото блюда — и в дневник питания автоматически добавляются калории и БЖУ (Premium).
-                        Фото упражнения — проверка техники и персональные подсказки от ИИ.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Запись тренировок и дневник питания</h3>
-                    <p class="feature-card__description">
-                        Записывайте тренировки и приёмы пищи в чате или через меню. ИИ видит историю и не предлагает
-                        уже сделанное как «план на сегодня». В Premium — калории по фото и сводка за неделю.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Body Score и ранги <span class="badge-new">NEW</span></h3>
-                    <p class="feature-card__description">
-                        Твой прогресс в одной цифре: регулярность, динамика анализов фигуры, тренировки.
-                        Ранги Bronze → Silver → Gold → Platinum — мотивация расти видимая, как в игре.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Визуальный прогресс <span class="badge-new">NEW</span></h3>
-                    <p class="feature-card__description">
-                        Все анализы фигуры на одной временной шкале: динамика % жира, изменения осанки,
-                        сравнение «до/после» без фотостудии. Premium.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 8a4 4 0 100 8 4 4 0 000-8zm0-6C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Прогноз на 90 дней <span class="badge-new">NEW</span></h3>
-                    <p class="feature-card__description">
-                        ИИ анализирует темп прогресса и предсказывает, как изменится твоя фигура через 3 месяца
-                        при текущем ритме. Premium.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">План объясняет изменения</h3>
-                    <p class="feature-card__description">
-                        При авто-обновлении плана по результатам (Premium) бот не просто пересобирает программу —
-                        показывает, что именно изменил и почему: «уменьшил объём ног из-за пропуска среды», «увеличил вес в жиме».
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-card__title">Единый Premium <span class="badge-new">NEW</span></h3>
-                    <p class="feature-card__description">
-                        Купил Premium в FitnessAI — он автоматически работает и в @BodyMetrics_bot. Один платёж — два бота.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Как это работает</h2>
-                <p class="section-subtitle">Всего 3 простых шага до персонального плана тренировок</p>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step__number">1</div>
-                    <div class="step__content">
-                        <h3 class="step__title">Запустите бота</h3>
-                        <p class="step__description">
-                            Найдите <span class="bot-name" data-bot="@FitnessPlusAI_Bot" title="Нажмите, чтобы скопировать">@FitnessPlusAI_Bot</span> в Telegram и нажмите "Старт". 
-                            Никакой регистрации не требуется - можете сразу попробовать демо.
+                <div class="features__grid">
+                    <article class="feature-card feature-card--wide">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3a3 3 0 110 6 3 3 0 010-6zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Body-Aware планирование <span class="badge-new">NEW</span></h3>
+                        <p class="feature-card__description">
+                            Сделал анализ в @BodyMetrics_bot — и персональный план тренировок учитывает % жира, осанку,
+                            пропорции и слабые зоны. ИИ-тренер видит твоё тело, а не только цифры в анкете.
                         </p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step__number">2</div>
-                    <div class="step__content">
-                        <h3 class="step__title">Расскажите о целях</h3>
-                        <p class="step__description">
-                            Ответьте на несколько вопросов о ваших фитнес-целях, опыте и предпочтениях. 
-                            ИИ учтет все детали для создания идеального плана.
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Персональный план через ИИ</h3>
+                        <p class="feature-card__description">
+                            ИИ фитнес-тренер заменяет персонального тренера онлайн: анализирует данные и собирает
+                            уникальный план тренировок и питания под цель, опыт и особенности — и для похудения, и для набора массы.
                         </p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step__number">3</div>
-                    <div class="step__content">
-                        <h3 class="step__title">Получите план</h3>
-                        <p class="step__description">
-                            Получите персональный план тренировок и питания. Записывайте тренировки и приёмы пищи — 
-                            ИИ учитывает историю и подсказывает, что делать дальше. В Premium план обновляется по результатам недели.
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Анализ фото еды и техники</h3>
+                        <p class="feature-card__description">
+                            Фото блюда — и в дневник питания добавляются калории и БЖУ (Premium).
+                            Фото упражнения — проверка техники и подсказки от ИИ-тренера.
                         </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Запись тренировок и дневник питания</h3>
+                        <p class="feature-card__description">
+                            Записывай тренировки и приёмы пищи в чате или через меню. Фитнес-бот видит историю
+                            и не предлагает уже сделанное как «план на сегодня».
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Body Score и ранги <span class="badge-new">NEW</span></h3>
+                        <p class="feature-card__description">
+                            Прогресс в одной цифре: регулярность, динамика анализов фигуры, тренировки.
+                            Ранги Новичок → Бог формы — мотивация расти, как в игре.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Визуальный прогресс <span class="badge-new">NEW</span></h3>
+                        <p class="feature-card__description">
+                            Все анализы фигуры на одной шкале: динамика % жира, изменения осанки,
+                            сравнение «до/после» без фотостудии. Premium.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zm0-6C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Прогноз на 90 дней <span class="badge-new">NEW</span></h3>
+                        <p class="feature-card__description">
+                            ИИ оценивает темп прогресса и показывает, как изменится фигура через 3 месяца
+                            при текущем ритме тренировок. Premium.
+                        </p>
+                    </article>
+                    <article class="feature-card feature-card--wide">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">План объясняет каждое изменение</h3>
+                        <p class="feature-card__description">
+                            При авто-обновлении плана по результатам (Premium) фитнес-бот не просто пересобирает программу —
+                            он показывает, что именно изменил и почему: «уменьшил объём ног из-за пропуска среды», «увеличил вес в жиме».
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="how" class="how-it-works section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Просто начать</span>
+                    <h2 class="section-title">Как это работает</h2>
+                    <p class="section-subtitle">Три шага до персонального плана тренировок в Telegram</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Запустите фитнес-бот</h3>
+                            <p class="step__description">
+                                Найдите <span class="bot-name" data-bot="@FitnessPlusAI_Bot" title="Нажмите, чтобы скопировать">@FitnessPlusAI_Bot</span> в Telegram и нажмите «Старт».
+                                Регистрация не нужна — можно сразу попробовать демо-план тренировок.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Расскажите о целях</h3>
+                            <p class="step__description">
+                                Ответьте на пару вопросов о фитнес-целях, опыте и предпочтениях.
+                                ИИ-тренер учтёт все детали — от похудения до набора массы.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Получите план и тренируйтесь</h3>
+                            <p class="step__description">
+                                Получите персональный план тренировок и питания. Записывайте тренировки и приёмы пищи —
+                                в Premium план обновляется по результатам недели.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Выберите подходящий тариф</h2>
-                <p class="section-subtitle">Начните бесплатно, получите результат за минуты</p>
-            </div>
-
-            <div class="promo-timer" id="promo-timer">
-                <div class="promo-timer__icon">🔥</div>
-                <div class="promo-timer__body">
-                    <div class="promo-timer__title">Специальные цены для первых пользователей</div>
-                    <div class="promo-timer__clock">
-                        <div class="promo-timer__segment">
-                            <span class="promo-timer__number" id="promo-days">--</span>
-                            <span class="promo-timer__label">дней</span>
-                        </div>
-                        <span class="promo-timer__sep">:</span>
-                        <div class="promo-timer__segment">
-                            <span class="promo-timer__number" id="promo-hours">--</span>
-                            <span class="promo-timer__label">часов</span>
-                        </div>
-                        <span class="promo-timer__sep">:</span>
-                        <div class="promo-timer__segment">
-                            <span class="promo-timer__number" id="promo-mins">--</span>
-                            <span class="promo-timer__label">минут</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pricing__grid">
-                <!-- Free -->
-                <div class="pricing-card">
-                    <div class="pricing-card__header">
-                        <h3 class="pricing-card__title">Бесплатный</h3>
-                        <div class="pricing-card__price-block">
-                            <span class="pricing-card__amount">0 ₽</span>
-                            <span class="pricing-card__period">навсегда</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-card__features">
-                        <li>План тренировок на 7 дней (1 в неделю)</li>
-                        <li>Запись тренировок и дневник питания</li>
-                        <li>ИИ-консультант (дневной лимит)</li>
-                        <li>Русский язык</li>
+        <!-- Ecosystem Section -->
+        <section id="ecosystem" class="partner-promo section">
+            <div class="container partner-promo__grid">
+                <div class="partner-promo__content">
+                    <span class="partner-promo__tag">NEW · AI Fitness Ecosystem</span>
+                    <h2>Единая экосистема FitnessAI × BodyMetrics</h2>
+                    <p>
+                        Мы соединили двух ИИ-ботов в один интеллект. @BodyMetrics_bot анализирует фигуру по фото,
+                        а фитнес-бот FitnessAI мгновенно учитывает эти данные в плане тренировок и питания.
+                        Никаких повторных анкет, ручного переноса параметров или двойных подписок.
+                    </p>
+                    <ul class="partner-promo__list">
+                        <li>Body-aware планирование: план учитывает % жира, осанку и пропорции</li>
+                        <li>Авто-обновление плана тренировок после каждого нового анализа</li>
+                        <li>Единый Premium: один платёж — два бота</li>
+                        <li>Body Score и ранги Новичок → Бог формы за регулярность</li>
+                        <li>Визуальный прогресс «до/после» на одной шкале</li>
+                        <li>Прогноз изменения фигуры на 90 дней вперёд</li>
                     </ul>
-                    <a href="https://t.me/FitnessPlusAI_Bot" class="pricing-card__button btn btn--secondary" target="_blank">Начать бесплатно</a>
-                </div>
-
-                <!-- Premium -->
-                <div class="pricing-card pricing-card--premium">
-                    <div class="pricing-card__header">
-                        <h3 class="pricing-card__title">Premium</h3>
-                        <p class="pricing-card__subtitle">Все возможности бота без ограничений</p>
+                    <div class="partner-promo__actions">
+                        <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary" target="_blank" rel="noopener">Запустить FitnessAI</a>
+                        <a href="https://t.me/BodyMetrics_bot?start=from_fitai_landing" class="btn btn--ghost" target="_blank" rel="noopener">Запустить BodyMetrics</a>
                     </div>
-
-                    <ul class="pricing-card__features pricing-card__features--premium">
-                        <li>Планы на 30 дней, до 50 в месяц</li>
-                        <li>Авто-коррекция плана по результатам</li>
-                        <li>Body-aware планирование (учёт анализа фигуры)</li>
-                        <li>Визуальный прогресс «до/после»</li>
-                        <li>Прогноз фигуры на 90 дней</li>
-                        <li>Анализ фото еды и техники</li>
-                        <li>ИИ-тренер без ограничений на диалог</li>
-                        <li>Дневник питания с калориями и БЖУ</li>
-                        <li>Челленджи и экспорт в PDF</li>
-                        <li>✨ Premium работает и в @BodyMetrics_bot</li>
-                    </ul>
-
-                    <div class="pricing-plans">
-                        <!-- Monthly -->
-                        <a href="https://t.me/FitnessPlusAI_Bot?start=premium" class="pricing-plan" target="_blank">
-                            <div class="pricing-plan__info">
-                                <span class="pricing-plan__name">Месячная</span>
-                                <span class="pricing-plan__period">30 дней</span>
-                            </div>
-                            <span class="pricing-plan__price">300 ₽</span>
-                        </a>
-                        <!-- Yearly -->
-                        <a href="https://t.me/FitnessPlusAI_Bot?start=premium" class="pricing-plan pricing-plan--hot" target="_blank">
-                            <span class="pricing-plan__tag" id="pricing-promo-badge">-34%</span>
-                            <div class="pricing-plan__info">
-                                <span class="pricing-plan__name">Годовая</span>
-                                <span class="pricing-plan__period">365 дней</span>
-                            </div>
-                            <div class="pricing-plan__prices">
-                                <span class="pricing-plan__old">3000 ₽</span>
-                                <span class="pricing-plan__price pricing-plan__price--accent">1990 ₽</span>
-                            </div>
-                        </a>
-                        <!-- Lifetime -->
-                        <a href="https://t.me/FitnessPlusAI_Bot?start=premium" class="pricing-plan" target="_blank">
-                            <span class="pricing-plan__tag pricing-plan__tag--green" id="pricing-promo-badge-lifetime">навсегда</span>
-                            <div class="pricing-plan__info">
-                                <span class="pricing-plan__name">Пожизненная</span>
-                                <span class="pricing-plan__period">без продлений</span>
-                            </div>
-                            <div class="pricing-plan__prices">
-                                <span class="pricing-plan__old">10 000 ₽</span>
-                                <span class="pricing-plan__price pricing-plan__price--accent">6990 ₽</span>
-                            </div>
-                        </a>
+                    <p class="partner-promo__footnote">
+                        Без миграций и ручных настроек — экосистема активируется автоматически по Telegram-аккаунту.
+                    </p>
+                </div>
+                <div class="partner-promo__card">
+                    <h3>Сценарий из 3 шагов</h3>
+                    <ol>
+                        <li><span>1</span> Фото в @BodyMetrics_bot → AI-анализ фигуры за 30 секунд.</li>
+                        <li><span>2</span> Один тап — ты в FitnessAI с готовым «свежим анализом».</li>
+                        <li><span>3</span> План тренировок и питания пересобирается под твоё реальное тело.</li>
+                    </ol>
+                    <div class="partner-promo__highlight">
+                        <p>Что получаешь</p>
+                        <strong>AI-план тренировок, который видит твоё тело и адаптируется под прогресс</strong>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Что говорят пользователи</h2>
-                <p class="section-subtitle">Более 10,000 довольных пользователей по всему миру</p>
-            </div>
-            <div class="reviews__grid">
-                <div class="review-card">
-                    <div class="review-card__rating">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <p class="review-card__text">
-                        "Невероятно удобно! Получил персональный план за минуту. 
-                        За 2 месяца сбросил 8 кг, следуя рекомендациям бота."
-                    </p>
-                    <div class="review-card__author">
-                        <img src="assets/images/ava1.webp" alt="Алексей М." class="review-card__avatar">
-                        <div class="review-card__info">
-                            <div class="review-card__name">Алексей М.</div>
-                            <div class="review-card__role">Москва</div>
-                        </div>
-                    </div>
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Тарифы</span>
+                    <h2 class="section-title">Выберите подходящий тариф</h2>
+                    <p class="section-subtitle">Один Premium — два бота: FitnessAI и BodyMetrics</p>
                 </div>
-                <div class="review-card">
-                    <div class="review-card__rating">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <p class="review-card__text">
-                        "Анализ фото еды - это просто магия! Теперь точно знаю, 
-                        сколько калорий в каждом блюде. Очень точные рекомендации."
-                    </p>
-                    <div class="review-card__author">
-                        <img src="assets/images/ava2.webp" alt="Мария К." class="review-card__avatar">
-                        <div class="review-card__info">
-                            <div class="review-card__name">Мария К.</div>
-                            <div class="review-card__role">Санкт-Петербург</div>
+
+                <div class="pricing__grid">
+                    <!-- Free -->
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Бесплатный</h3>
+                            <div class="pricing-card__price-block">
+                                <span class="pricing-card__amount">0 ₽</span>
+                                <span class="pricing-card__period">навсегда</span>
+                            </div>
+                            <p class="pricing-card__subtitle">Чтобы попробовать ИИ-тренера в деле</p>
                         </div>
+                        <ul class="pricing-card__features">
+                            <li>План тренировок на 7 дней (1 в неделю)</li>
+                            <li>Запись тренировок и дневник питания</li>
+                            <li>ИИ-консультант (дневной лимит)</li>
+                            <li>Русский язык</li>
+                        </ul>
+                        <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="pricing-card__button btn btn--ghost" target="_blank" rel="noopener">Начать бесплатно</a>
                     </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-card__rating">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <p class="review-card__text">
-                        "Лучший фитнес-бот! Планы действительно персональные, 
-                        а не шаблонные. ИИ учитывает все мои особенности и прогресс."
-                    </p>
-                    <div class="review-card__author">
-                        <img src="assets/images/ava3.webp" alt="Дмитрий С." class="review-card__avatar">
-                        <div class="review-card__info">
-                            <div class="review-card__name">Дмитрий С.</div>
-                            <div class="review-card__role">Екатеринбург</div>
+
+                    <!-- Premium -->
+                    <div class="pricing-card pricing-card--premium">
+                        <span class="pricing-card__ribbon">Популярный выбор</span>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Premium</h3>
+                            <p class="pricing-card__subtitle">Все возможности фитнес-бота без ограничений</p>
+                        </div>
+
+                        <ul class="pricing-card__features pricing-card__features--premium">
+                            <li>Планы тренировок на 30 дней, до 50 в месяц</li>
+                            <li>Авто-коррекция плана по результатам</li>
+                            <li>Body-aware планирование (учёт анализа фигуры)</li>
+                            <li>Визуальный прогресс «до/после»</li>
+                            <li>Прогноз фигуры на 90 дней</li>
+                            <li>Анализ фото еды и техники</li>
+                            <li>ИИ-тренер без ограничений на диалог</li>
+                            <li>Дневник питания с калориями и БЖУ</li>
+                            <li>Челленджи и экспорт в PDF</li>
+                            <li>Premium работает и в @BodyMetrics_bot</li>
+                        </ul>
+
+                        <div class="pricing-plans">
+                            <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="pricing-plan" target="_blank" rel="noopener">
+                                <div class="pricing-plan__info">
+                                    <span class="pricing-plan__name">Месячная</span>
+                                    <span class="pricing-plan__period">30 дней</span>
+                                </div>
+                                <span class="pricing-plan__price">300 ₽</span>
+                            </a>
+                            <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="pricing-plan pricing-plan--hot" target="_blank" rel="noopener">
+                                <span class="pricing-plan__tag">выгодно</span>
+                                <div class="pricing-plan__info">
+                                    <span class="pricing-plan__name">Годовая</span>
+                                    <span class="pricing-plan__period">365 дней · ≈ 250 ₽/мес</span>
+                                </div>
+                                <span class="pricing-plan__price pricing-plan__price--accent">3 000 ₽</span>
+                            </a>
+                            <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="pricing-plan" target="_blank" rel="noopener">
+                                <span class="pricing-plan__tag pricing-plan__tag--green">навсегда</span>
+                                <div class="pricing-plan__info">
+                                    <span class="pricing-plan__name">Пожизненная</span>
+                                    <span class="pricing-plan__period">без продлений</span>
+                                </div>
+                                <span class="pricing-plan__price pricing-plan__price--accent">10 000 ₽</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Partner Promo Section -->
-    <section id="ecosystem" class="partner-promo">
-        <div class="container partner-promo__grid">
-            <div class="partner-promo__content">
-                <p class="partner-promo__tag">🚀 NEW · AI Fitness Ecosystem</p>
-                <h2>Единая экосистема FitnessAI × BodyMetrics</h2>
-                <p>
-                    Мы соединили двух AI-ботов в один интеллект. @BodyMetrics_bot анализирует фигуру по фото,
-                    FitnessAI мгновенно учитывает эти данные в твоём плане тренировок и питания. Никаких
-                    повторных анкет, ручного переноса параметров или двойных подписок.
-                </p>
-                <ul class="partner-promo__list">
-                    <li>📸 Body-aware планирование: план учитывает % жира, осанку и пропорции</li>
-                    <li>🔄 Авто-обновление плана после каждого нового анализа</li>
-                    <li>💎 Единый Premium: один платёж — два бота</li>
-                    <li>🏆 Body Score и ранги Bronze → Platinum за регулярность и прогресс</li>
-                    <li>📊 Визуальный прогресс «до/после» в одной шкале</li>
-                    <li>🔮 Прогноз изменения фигуры на 90 дней вперёд</li>
-                </ul>
-                <div class="partner-promo__actions">
-                    <a href="https://t.me/BodyMetrics_bot" class="btn btn--secondary" target="_blank">Запустить BodyMetrics</a>
-                    <a href="https://t.me/FitnessPlusAI_Bot" class="btn btn--primary" target="_blank">Запустить FitnessAI</a>
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Отзывы</span>
+                    <h2 class="section-title">Что говорят пользователи</h2>
+                    <p class="section-subtitle">Более 10 000 человек уже тренируются с ИИ-тренером в Telegram</p>
                 </div>
-                <p class="partner-promo__footnote">
-                    Без миграций и ручных настроек — экосистема активируется автоматически по Telegram-аккаунту.
-                </p>
-            </div>
-            <div class="partner-promo__card">
-                <h3>Сценарий из 3 шагов</h3>
-                <ol>
-                    <li><span>1</span> Фото в @BodyMetrics_bot → детальный AI-анализ фигуры за 30 секунд.</li>
-                    <li><span>2</span> Один тап — ты в FitnessAI с готовым «свежим анализом».</li>
-                    <li><span>3</span> План тренировок и питания пересобирается под твоё реальное тело.</li>
-                </ol>
-                <div class="partner-promo__highlight">
-                    <p>🎯 Что получаешь</p>
-                    <strong>AI-план, который ВИДИТ твоё тело и адаптируется под прогресс</strong>
+                <div class="reviews__grid">
+                    <article class="review-card">
+                        <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="review-card__text">
+                            «Невероятно удобно! Получил персональный план тренировок за минуту.
+                            За 2 месяца сбросил 8 кг, следуя рекомендациям фитнес-бота.»
+                        </p>
+                        <div class="review-card__author">
+                            <span class="review-card__avatar" style="--ava:linear-gradient(135deg,#6366f1,#8b5cf6)" aria-hidden="true">АМ</span>
+                            <div class="review-card__info">
+                                <div class="review-card__name">Алексей М.</div>
+                                <div class="review-card__role">Москва</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="review-card__text">
+                            «Анализ фото еды — просто магия! Теперь точно знаю калории каждого блюда,
+                            а дневник питания заполняется сам. Очень точные рекомендации ИИ-тренера.»
+                        </p>
+                        <div class="review-card__author">
+                            <span class="review-card__avatar" style="--ava:linear-gradient(135deg,#10b981,#059669)" aria-hidden="true">МК</span>
+                            <div class="review-card__info">
+                                <div class="review-card__name">Мария К.</div>
+                                <div class="review-card__role">Санкт-Петербург</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="review-card__text">
+                            «Лучший фитнес-бот! Планы тренировок действительно персональные, а не шаблонные.
+                            ИИ-тренер учитывает все мои особенности и прогресс.»
+                        </p>
+                        <div class="review-card__author">
+                            <span class="review-card__avatar" style="--ava:linear-gradient(135deg,#f97316,#ea580c)" aria-hidden="true">ДС</span>
+                            <div class="review-card__info">
+                                <div class="review-card__name">Дмитрий С.</div>
+                                <div class="review-card__role">Екатеринбург</div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Часто задаваемые вопросы</h2>
-                <p class="section-subtitle">Ответы на популярные вопросы о FitnessAI Bot</p>
-            </div>
-            <div class="faq__list">
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>Как работает ИИ-тренер?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>ИИ анализирует ваши данные (возраст, вес, цели, опыт) и создаёт персональные планы. Он видит записанные тренировки и дневник питания: не предлагает уже сделанное как «план на сегодня», а рекомендует следующий шаг. В Premium план можно раз в 7 дней автоматически пересобрать с учётом результатов недели.</p>
-                    </div>
+        <!-- FAQ Section -->
+        <section id="faq" class="faq section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">FAQ</span>
+                    <h2 class="section-title">Частые вопросы о фитнес-боте</h2>
+                    <p class="section-subtitle">Всё про ИИ-тренера, план тренировок и тренировки в Telegram</p>
                 </div>
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>Нужно ли скачивать приложение?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>Нет! Бот работает прямо в Telegram. Просто найдите @FitnessPlusAI_Bot и начните использовать. Никаких дополнительных приложений не требуется.</p>
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Как работает ИИ-тренер в Telegram?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>ИИ-тренер анализирует ваши данные (возраст, вес, цели, опыт) и создаёт персональный план тренировок. Фитнес-бот видит записанные тренировки и дневник питания: не предлагает уже сделанное как «план на сегодня», а рекомендует следующий шаг. В Premium план раз в 7 дней автоматически пересобирается с учётом результатов недели.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>Безопасны ли мои данные?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>Да, мы соблюдаем все требования GDPR. Ваши данные шифруются и хранятся безопасно. Вы можете запросить удаление данных в любое время.</p>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Нужно ли скачивать приложение?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Нет. Фитнес-бот работает прямо в Telegram — просто найдите @FitnessPlusAI_Bot и начните тренировки в Telegram. Никаких дополнительных приложений не требуется.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>Можно ли отменить подписку?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>Конечно! Вы можете отменить подписку в любое время через настройки бота. После отмены у вас останется доступ к премиум-функциям до конца оплаченного периода.</p>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Подойдёт ли ИИ-тренер для похудения?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Да. ИИ фитнес-тренер строит персональный план тренировок и питания под цель «похудение», учитывает дневник питания и анализ фигуры из @BodyMetrics_bot, а в Premium считает калории и БЖУ по фото еды.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>На каком языке работает бот?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>Бот работает на русском языке. Все планы, рекомендации и диалог с ИИ-консультантом — на русском.</p>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Безопасны ли мои данные?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Да, мы соблюдаем требования по защите персональных данных. Данные хранятся безопасно, а запросить удаление можно в любой момент.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>Как работает Body-aware планирование и единый Premium?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>Когда ты делаешь анализ фигуры в @BodyMetrics_bot, FitnessAI автоматически получает % жира, осанку, пропорции и слабые зоны и учитывает их в новом плане тренировок и питания (Body-aware planning). Premium-подписка работает одновременно в обоих ботах: один платёж — все возможности экосистемы. Также появляются Body Score, ранги, визуальный прогресс «до/после» и прогноз фигуры на 90 дней.</p>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Можно ли отменить подписку?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Конечно. Подписку можно отменить в любое время через настройки бота. После отмены доступ к Premium сохраняется до конца оплаченного периода.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question">
-                        <span>Как работает дневник питания и обновление плана в Premium?</span>
-                        <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                        </svg>
-                    </button>
-                    <div class="faq__answer">
-                        <p>Дневник питания: записывайте приёмы пищи в чате или через меню; в Premium фото блюда автоматически добавляет калории и БЖУ, доступна сводка за 7 дней. Вечером тем, кто ведёт дневник, приходит напоминание подвести итоги за день (в Premium — с калориями и белком). Обновление плана по результатам: раз в 7 дней можно пересобрать план с учётом тренировок за неделю — кнопка в профиле (только Premium). Бот показывает, что именно изменил в плане и почему.</p>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Как работает Body-aware планирование и единый Premium?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Когда вы делаете анализ фигуры в @BodyMetrics_bot, FitnessAI автоматически получает % жира, осанку, пропорции и слабые зоны и учитывает их в новом плане тренировок и питания (Body-aware planning). Premium работает одновременно в обоих ботах: один платёж — вся экосистема. Также появляются Body Score, ранги, визуальный прогресс «до/после» и прогноз фигуры на 90 дней.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Как работает дневник питания и обновление плана в Premium?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Дневник питания: записывайте приёмы пищи в чате или через меню; в Premium фото блюда автоматически добавляет калории и БЖУ, доступна сводка за 7 дней. Обновление плана по результатам: раз в 7 дней можно пересобрать план тренировок с учётом тренировок за неделю — кнопка в профиле (только Premium). Бот показывает, что именно изменил в плане и почему.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta__content">
-                <h2 class="cta__title">Готовы начать свой фитнес-путь?</h2>
-                <p class="cta__subtitle">
-                    Присоединяйтесь к тысячам пользователей, которые уже достигли своих целей 
-                    с помощью персонального ИИ-тренера
-                </p>
-                <div class="cta__actions">
-                    <a href="https://t.me/FitnessPlusAI_Bot" class="btn btn--primary btn--large" target="_blank">
-                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
-                        </svg>
-                        Начать бесплатно
-                    </a>
-                    <a href="#pricing" class="btn btn--secondary btn--large">
-                        Посмотреть тарифы
-                    </a>
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__inner">
+                    <h2 class="cta__title">Готовы начать свой фитнес-путь?</h2>
+                    <p class="cta__subtitle">
+                        Присоединяйтесь к тысячам пользователей, которые уже достигли целей
+                        с персональным ИИ-тренером и планом тренировок в Telegram.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--white btn--large" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                            </svg>
+                            Начать бесплатно
+                        </a>
+                        <a href="#pricing" class="btn btn--outline-white btn--large">Посмотреть тарифы</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -726,28 +721,30 @@
             <div class="footer__content">
                 <div class="footer__brand">
                     <div class="footer__logo">
-                        <img src="assets/images/logo.svg" alt="FitnessAI Bot">
+                        <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" width="32" height="32">
                         <span>FitnessAI Bot</span>
                     </div>
                     <p class="footer__description">
-                        Персональный ИИ-тренер в Telegram для создания планов тренировок и питания
+                        Персональный тренер онлайн в Telegram: ИИ-тренер составит план тренировок и питания,
+                        дневник питания и анализ фото.
                     </p>
                 </div>
                 <div class="footer__links">
                     <div class="footer__column">
-                        <h4 class="footer__title">Продукт</h4>
+                        <h3 class="footer__title">Продукт</h3>
                         <a href="#features" class="footer__link">Возможности</a>
                         <a href="#pricing" class="footer__link">Тарифы</a>
                         <a href="#reviews" class="footer__link">Отзывы</a>
+                        <a href="#ecosystem" class="footer__link">Экосистема</a>
                     </div>
                     <div class="footer__column">
-                        <h4 class="footer__title">Поддержка</h4>
+                        <h3 class="footer__title">Поддержка</h3>
                         <a href="#faq" class="footer__link">FAQ</a>
-                        <a href="https://t.me/FitnessPlusAI_support_bot" class="footer__link" target="_blank">Техподдержка</a>
+                        <a href="https://t.me/FitnessPlusAI_support_bot" class="footer__link" target="_blank" rel="noopener">Техподдержка</a>
                         <a href="mailto:support@fitness-ai.ru" class="footer__link">Email</a>
                     </div>
                     <div class="footer__column">
-                        <h4 class="footer__title">Правовая информация</h4>
+                        <h3 class="footer__title">Правовая информация</h3>
                         <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
                         <a href="terms.html" class="footer__link">Условия использования</a>
                         <a href="cookies.html" class="footer__link">Политика cookies</a>
@@ -755,12 +752,10 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2026 FitnessAI Bot. Все права защищены.
-                </p>
+                <p class="footer__copyright">© 2026 FitnessAI Bot. Все права защищены.</p>
                 <div class="footer__social">
-                    <a href="https://t.me/FitnessPlusAI_Bot" class="footer__social-link" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="footer__social-link" target="_blank" rel="noopener" aria-label="Telegram FitnessAI Bot">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
                         </svg>
                     </a>
@@ -773,4 +768,3 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-<!--  -->
