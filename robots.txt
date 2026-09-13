@@ -1,18 +1,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: http://fitness-ai.ru/sitemap.xml
+Disallow: /pay/
 
-# Crawl-delay
-Crawl-delay: 1
-
-# Disallow admin areas (if any)
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-
-# Allow important pages
-Allow: /
-Allow: /index.html
-Allow: /assets/
+Sitemap: https://fitness-ai.ru/sitemap.xml
