@@ -3,42 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика cookies - FitnessAI Bot</title>
-    <meta name="description" content="Политика использования cookies на сайте FitnessAI Bot. Как мы используем файлы cookie и аналогичные технологии.">
+    <title>Политика cookies — FitnessAI Bot</title>
+    <meta name="description" content="Какие cookie ставят Яндекс.Метрика и Google Analytics на fitness-ai.ru и как отозвать согласие.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://fitness-ai.ru/cookies.html">
-    
-    <!-- Favicon -->
+
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.svg">
-    <link rel="icon" sizes="32x32" href="assets/images/favicon.svg">
-    <link rel="icon" sizes="16x16" href="assets/images/favicon.svg">
-    
-    <!-- Fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DB9W3HRN7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-9DB9W3HRN7');
-    </script>
-    
+    <script src="assets/js/consent.js" defer></script>
+
     <style>
         .legal-page {
             padding: calc(80px + var(--spacing-4xl)) 0 var(--spacing-4xl);
             background: rgba(248, 250, 252, 0.9);
-            backdrop-filter: blur(10px);
             min-height: 100vh;
         }
-        
         .legal-content {
             max-width: 800px;
             margin: 0 auto;
@@ -47,40 +31,10 @@
             border-radius: var(--radius-2xl);
             box-shadow: var(--shadow-lg);
         }
-        
-        .legal-content h1 {
-            color: var(--text-primary);
-            margin-bottom: var(--spacing-2xl);
-            text-align: center;
-        }
-        
-        .legal-content h2 {
-            color: var(--primary-color);
-            margin-top: var(--spacing-2xl);
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        .legal-content h3 {
-            color: var(--text-primary);
-            margin-top: var(--spacing-xl);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .legal-content p {
-            margin-bottom: var(--spacing-lg);
-            line-height: 1.7;
-        }
-        
-        .legal-content ul, .legal-content ol {
-            margin-bottom: var(--spacing-lg);
-            padding-left: var(--spacing-xl);
-        }
-        
-        .legal-content li {
-            margin-bottom: var(--spacing-sm);
-            line-height: 1.6;
-        }
-        
+        .legal-content h1 { color: var(--text-primary); margin-bottom: var(--spacing-2xl); }
+        .legal-content h2 { color: var(--primary-color); margin-top: var(--spacing-2xl); margin-bottom: var(--spacing-lg); }
+        .legal-content p, .legal-content ul { margin-bottom: var(--spacing-lg); line-height: 1.7; }
+        .legal-content ul { padding-left: var(--spacing-xl); }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -90,98 +44,28 @@
             margin-bottom: var(--spacing-2xl);
             font-weight: 500;
         }
-        
-        .back-link:hover {
-            color: var(--primary-dark);
-        }
-        
-        .last-updated {
-            color: var(--text-muted);
-            font-size: var(--font-size-sm);
-            text-align: center;
-            margin-bottom: var(--spacing-2xl);
-            padding: var(--spacing-md);
-            background: var(--background-secondary);
-            border-radius: var(--radius-md);
-        }
-        
-        .cookie-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: var(--spacing-lg) 0;
-            background: var(--background);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .cookie-table th,
-        .cookie-table td {
+        .cookie-table { width: 100%; border-collapse: collapse; margin: var(--spacing-lg) 0; }
+        .cookie-table th, .cookie-table td {
             padding: var(--spacing-md);
             text-align: left;
             border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
         }
-        
-        .cookie-table th {
-            background: var(--background-secondary);
-            font-weight: 600;
-            color: var(--text-primary);
+        .cookie-table th { background: var(--background-secondary); }
+        .cookie-actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 8px; }
+        .cookie-actions button {
+            font: 600 14px/1 Inter, system-ui, sans-serif;
+            border-radius: 10px;
+            padding: 12px 16px;
+            cursor: pointer;
+            border: 1px solid #c7d2fe;
+            background: #fff;
+            color: #3730a3;
         }
-        
-        .cookie-table td {
-            color: var(--text-secondary);
-        }
-        
-        .cookie-type {
-            display: inline-block;
-            padding: var(--spacing-xs) var(--spacing-sm);
-            border-radius: var(--radius-sm);
-            font-size: var(--font-size-xs);
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-        
-        .cookie-type.essential {
-            background: #d1fae5;
-            color: #065f46;
-        }
-        
-        .cookie-type.analytics {
-            background: #dbeafe;
-            color: #1e40af;
-        }
-        
-        .cookie-type.functional {
-            background: #fef3c7;
-            color: #92400e;
-        }
-        
-        .cookie-type.marketing {
-            background: #fce7f3;
-            color: #be185d;
-        }
-        
-        .info-box {
-            background: #eff6ff;
-            border: 1px solid #bfdbfe;
-            border-radius: var(--radius-md);
-            padding: var(--spacing-lg);
-            margin: var(--spacing-lg) 0;
-        }
-        
-        .info-box h4 {
-            color: #1e40af;
-            margin-bottom: var(--spacing-sm);
-        }
-        
-        .info-box p {
-            color: #1e40af;
-            margin-bottom: 0;
-        }
+        .cookie-actions .ok { background: #facc15; border-color: #facc15; color: #1e1b4b; }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
@@ -196,260 +80,66 @@
                 <a href="index.html#faq" class="nav__link">FAQ</a>
             </div>
             <div class="nav__actions">
-                <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary" target="_blank">
-                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
-                    </svg>
-                    Попробовать бесплатно
-                </a>
+                <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary" target="_blank">Попробовать бесплатно</a>
             </div>
         </nav>
     </header>
 
-    <!-- Legal Page Content -->
     <section class="legal-page">
         <div class="container">
             <div class="legal-content">
-                <a href="index.html" class="back-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
-                    </svg>
-                    Вернуться на главную
-                </a>
-                
+                <a href="index.html" class="back-link">← На главную</a>
                 <h1>Политика cookies</h1>
-                
-                <div class="last-updated">
-                    <strong>Последнее обновление:</strong> 15 декабря 2024 года
+                <p>Сайт fitness-ai.ru. Обновлено: 22 октября 2026.</p>
+                <p id="cookie-status">Проверяем ваш выбор…</p>
+                <div class="cookie-actions">
+                    <button type="button" class="ok" data-cookie-choice="granted">Разрешить аналитику</button>
+                    <button type="button" data-cookie-choice="denied">Отключить аналитику</button>
                 </div>
 
-                <h2>1. Что такое cookies</h2>
-                <p>Cookies (файлы cookie) — это небольшие текстовые файлы, которые сохраняются на вашем устройстве при посещении веб-сайтов. Они помогают сайтам запоминать информацию о ваших предпочтениях и улучшают пользовательский опыт.</p>
-                
-                <div class="info-box">
-                    <h4>💡 Важно знать</h4>
-                    <p>Cookies не могут повредить ваш компьютер или получить доступ к вашим личным файлам. Они содержат только информацию, которую вы предоставили сайту или которая была собрана автоматически.</p>
-                </div>
+                <h2>Когда ставятся cookie</h2>
+                <p>До нажатия «Принять» Яндекс.Метрика и Google Analytics не загружаются. «Только необходимые» оставляет сайт без этих счётчиков. Выбор хранится в localStorage браузера под ключом <code>fa_cookie_consent</code> — это не cookie аналитики.</p>
 
-                <h2>2. Как мы используем cookies</h2>
-                <p>На нашем сайте мы используем cookies для следующих целей:</p>
-                <ul>
-                    <li><strong>Обеспечение функциональности:</strong> для корректной работы сайта и его функций</li>
-                    <li><strong>Аналитика:</strong> для понимания того, как пользователи взаимодействуют с сайтом</li>
-                    <li><strong>Персонализация:</strong> для улучшения пользовательского опыта</li>
-                    <li><strong>Безопасность:</strong> для защиты от мошенничества и обеспечения безопасности</li>
-                </ul>
-
-                <h2>3. Типы cookies, которые мы используем</h2>
-                
-                <h3>3.1 Обязательные cookies</h3>
-                <p>Эти cookies необходимы для базовой функциональности сайта и не могут быть отключены:</p>
-                <ul>
-                    <li>Сохранение настроек языка</li>
-                    <li>Запоминание согласия на использование cookies</li>
-                    <li>Обеспечение безопасности сессий</li>
-                </ul>
-
-                <h3>3.2 Аналитические cookies</h3>
-                <p>Помогают нам понять, как посетители используют наш сайт:</p>
-                <ul>
-                    <li>Google Analytics — для анализа трафика и поведения пользователей</li>
-                    <li>Счетчики посещений страниц</li>
-                    <li>Информация о времени, проведенном на сайте</li>
-                </ul>
-
-                <h3>3.3 Функциональные cookies</h3>
-                <p>Улучшают функциональность и персонализацию:</p>
-                <ul>
-                    <li>Сохранение предпочтений пользователя</li>
-                    <li>Запоминание настроек отображения</li>
-                    <li>Персонализация контента</li>
-                </ul>
-
-                <h2>4. Детальная таблица используемых cookies</h2>
+                <h2>Аналитические cookie</h2>
                 <table class="cookie-table">
                     <thead>
-                        <tr>
-                            <th>Название</th>
-                            <th>Тип</th>
-                            <th>Цель</th>
-                            <th>Срок действия</th>
-                        </tr>
+                        <tr><th>Кто</th><th>Зачем</th><th>Cookie</th></tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>cookie_consent</td>
-                            <td><span class="cookie-type essential">Обязательные</span></td>
-                            <td>Запоминание согласия на использование cookies</td>
-                            <td>1 год</td>
+                            <td>Яндекс.Метрика, счётчик 106247373</td>
+                            <td>Визиты, клики, вебвизор</td>
+                            <td>_ym_uid, _ym_d, _ym_isad, _ym_visorc</td>
                         </tr>
                         <tr>
-                            <td>language_preference</td>
-                            <td><span class="cookie-type essential">Обязательные</span></td>
-                            <td>Сохранение выбранного языка интерфейса</td>
-                            <td>1 год</td>
-                        </tr>
-                        <tr>
-                            <td>session_id</td>
-                            <td><span class="cookie-type essential">Обязательные</span></td>
-                            <td>Идентификация пользовательской сессии</td>
-                            <td>Сессия</td>
-                        </tr>
-                        <tr>
-                            <td>_ga</td>
-                            <td><span class="cookie-type analytics">Аналитические</span></td>
-                            <td>Google Analytics - идентификация уникальных пользователей</td>
-                            <td>2 года</td>
-                        </tr>
-                        <tr>
-                            <td>_ga_*</td>
-                            <td><span class="cookie-type analytics">Аналитические</span></td>
-                            <td>Google Analytics - идентификация сессий</td>
-                            <td>2 года</td>
-                        </tr>
-                        <tr>
-                            <td>_gid</td>
-                            <td><span class="cookie-type analytics">Аналитические</span></td>
-                            <td>Google Analytics - идентификация пользователей</td>
-                            <td>24 часа</td>
-                        </tr>
-                        <tr>
-                            <td>user_preferences</td>
-                            <td><span class="cookie-type functional">Функциональные</span></td>
-                            <td>Сохранение пользовательских настроек</td>
-                            <td>6 месяцев</td>
-                        </tr>
-                        <tr>
-                            <td>theme_preference</td>
-                            <td><span class="cookie-type functional">Функциональные</span></td>
-                            <td>Сохранение выбранной темы оформления</td>
-                            <td>1 год</td>
+                            <td>Google Analytics, G-9DB9W3HRN7</td>
+                            <td>Статистика просмотров страниц</td>
+                            <td>_ga, _ga_9DB9W3HRN7</td>
                         </tr>
                     </tbody>
                 </table>
+                <p>Рекламных сетей на сайте нет. Данные счётчиков обрабатывают Яндекс и Google по своим правилам.</p>
 
-                <h2>5. Cookies третьих сторон</h2>
-                <p>Наш сайт может содержать cookies от третьих сторон:</p>
-                
-                <h3>5.1 Google Analytics</h3>
-                <p>Мы используем Google Analytics для анализа использования нашего сайта. Google Analytics использует cookies для сбора информации о том, как посетители используют сайт. Эта информация используется для составления отчетов и улучшения сайта.</p>
-                <ul>
-                    <li><strong>Политика конфиденциальности Google:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-                    <li><strong>Отключение Google Analytics:</strong> <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">https://tools.google.com/dlpage/gaoptout</a></li>
-                </ul>
-
-                <h3>5.2 Telegram Widget</h3>
-                <p>Если на сайте используется виджет Telegram, он может устанавливать свои cookies для обеспечения функциональности.</p>
-
-                <h2>6. Управление cookies</h2>
-                <p>Вы можете управлять cookies несколькими способами:</p>
-
-                <h3>6.1 Настройки браузера</h3>
-                <p>Большинство браузеров позволяют управлять cookies через настройки:</p>
-                <ul>
-                    <li><strong>Chrome:</strong> Настройки → Конфиденциальность и безопасность → Cookies</li>
-                    <li><strong>Firefox:</strong> Настройки → Приватность и защита → Cookies</li>
-                    <li><strong>Safari:</strong> Настройки → Конфиденциальность → Cookies</li>
-                    <li><strong>Edge:</strong> Настройки → Cookies и разрешения сайтов</li>
-                </ul>
-
-                <h3>6.2 Настройки на нашем сайте</h3>
-                <p>При первом посещении нашего сайта вы можете выбрать, какие типы cookies разрешить. Вы можете изменить эти настройки в любое время, нажав на кнопку "Настройки cookies" в нижней части страницы.</p>
-
-                <h3>6.3 Отключение cookies</h3>
-                <p>Вы можете полностью отключить cookies в настройках браузера, но это может повлиять на функциональность сайта:</p>
-                <ul>
-                    <li>Некоторые функции могут работать некорректно</li>
-                    <li>Настройки не будут сохраняться между сессиями</li>
-                    <li>Персонализация контента будет недоступна</li>
-                </ul>
-
-                <h2>7. Аналогичные технологии</h2>
-                <p>Помимо cookies, мы можем использовать аналогичные технологии:</p>
-                <ul>
-                    <li><strong>Local Storage:</strong> для хранения данных в браузере</li>
-                    <li><strong>Session Storage:</strong> для временного хранения данных сессии</li>
-                    <li><strong>Web Beacons:</strong> для отслеживания взаимодействий</li>
-                    <li><strong>Pixel Tags:</strong> для аналитики и рекламы</li>
-                </ul>
-
-                <h2>8. Обновления политики</h2>
-                <p>Мы можем обновлять эту Политику cookies время от времени. О существенных изменениях мы уведомим вас через уведомление на сайте или по электронной почте. Рекомендуем периодически проверять эту страницу для получения актуальной информации.</p>
-
-                <h2>9. Контактная информация</h2>
-                <p>Если у вас есть вопросы относительно использования cookies, вы можете связаться с нами:</p>
-                <ul>
-                    <li><strong>Telegram:</strong> <a href="https://t.me/FitnessPlusAI_support_bot" target="_blank">@FitnessPlusAI_support_bot</a></li>
-                    <li><strong>Email:</strong> <a href="mailto:privacy@fitness-ai.ru">privacy@fitness-ai.ru</a></li>
-                    <li><strong>Почтовый адрес:</strong> Россия, г. Москва, ул. Примерная, д. 1, оф. 100</li>
-                </ul>
-
-                <h2>10. Правовая основа</h2>
-                <p>Использование cookies регулируется:</p>
-                <ul>
-                    <li>Федеральным законом "О персональных данных" № 152-ФЗ</li>
-                    <li>Общим регламентом по защите данных (GDPR)</li>
-                    <li>Директивой о конфиденциальности электронных коммуникаций (ePrivacy Directive)</li>
-                </ul>
-
-                <div class="info-box">
-                    <h4>🔒 Безопасность</h4>
-                    <p>Мы принимаем все необходимые меры для защиты информации, собираемой через cookies, и используем ее только в соответствии с настоящей Политикой и применимым законодательством.</p>
-                </div>
+                <h2>Как отключить</h2>
+                <p>Кнопка «Отключить аналитику» на этой странице снимает согласие и удаляет уже поставленные cookie счётчиков. Баннер внизу экрана показывается, пока выбор не сделан, и возвращается, если очистить данные сайта в браузере.</p>
+                <p>Обработка данных в боте описана отдельно: <a href="privacy.html">политика конфиденциальности</a>. Вопросы: <a href="mailto:support@fitness-ai.ru">support@fitness-ai.ru</a>.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <div class="footer__brand">
-                    <div class="footer__logo">
-                        <img src="assets/images/logo.svg" alt="FitnessAI Bot">
-                        <span>FitnessAI Bot</span>
-                    </div>
-                    <p class="footer__description">
-                        Персональный ИИ-тренер в Telegram для создания планов тренировок и питания
-                    </p>
-                </div>
-                <div class="footer__links">
-                    <div class="footer__column">
-                        <h4 class="footer__title">Продукт</h4>
-                        <a href="index.html#features" class="footer__link">Возможности</a>
-                        <a href="index.html#pricing" class="footer__link">Тарифы</a>
-                        <a href="index.html#reviews" class="footer__link">Отзывы</a>
-                    </div>
-                    <div class="footer__column">
-                        <h4 class="footer__title">Поддержка</h4>
-                        <a href="index.html#faq" class="footer__link">FAQ</a>
-                        <a href="https://t.me/FitnessPlusAI_support_bot" class="footer__link" target="_blank">Техподдержка</a>
-                        <a href="mailto:support@fitness-ai.ru" class="footer__link">Email</a>
-                    </div>
-                    <div class="footer__column">
-                        <h4 class="footer__title">Правовая информация</h4>
-                        <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
-                        <a href="terms.html" class="footer__link">Условия использования</a>
-                        <a href="cookies.html" class="footer__link">Политика cookies</a>
-                    </div>
-                </div>
-            </div>
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2024 FitnessAI Bot. Все права защищены.
+                <p class="footer__copyright">© 2026 FitnessAI Bot. Все права защищены.</p>
+                <p>
+                    <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+                    ·
+                    <a href="terms.html" class="footer__link">Условия использования</a>
+                    ·
+                    <a href="cookies.html" class="footer__link">Политика cookies</a>
                 </p>
-                <div class="footer__social">
-                    <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="footer__social-link" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
-                        </svg>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
