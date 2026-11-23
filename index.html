@@ -33,7 +33,9 @@
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,12 +156,13 @@
 
     <!-- Promo banner -->
     <div class="promo-banner" id="promo-banner">
-        <div class="container">
+        <div class="container promo-banner__container">
             <div class="promo-banner__content">
                 <span class="promo-banner__badge">NEW</span>
                 <span class="promo-banner__text">AI Fitness Ecosystem — единый Premium для FitnessAI и BodyMetrics, Body Score и прогноз фигуры на 90 дней</span>
-                <a href="#ecosystem" class="promo-banner__cta">Подробнее</a>
+                <a href="#ecosystem" class="promo-banner__cta">Подробнее <span class="promo-banner__arrow" aria-hidden="true">→</span></a>
             </div>
+            <button type="button" class="promo-banner__close" id="promo-banner-close" aria-label="Закрыть уведомление">×</button>
         </div>
     </div>
 
@@ -167,9 +170,10 @@
     <header class="header" id="header">
         <nav class="nav container" aria-label="Основная навигация">
             <a href="#hero" class="nav__brand">
-                <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" class="nav__logo" width="32" height="32">
+                <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" class="nav__logo" width="34" height="34">
                 <span class="nav__title">FitnessAI Bot</span>
             </a>
+            <div class="nav__backdrop" id="nav-backdrop" aria-hidden="true"></div>
             <div class="nav__menu" id="nav-menu">
                 <a href="#features" class="nav__link">Возможности</a>
                 <a href="#how" class="nav__link">Как работает</a>
@@ -242,48 +246,18 @@
                         </div>
                     </div>
                     <div class="hero__visual">
-                        <div class="phone-mockup">
-                            <div class="phone-mockup__notch" aria-hidden="true"></div>
-                            <div class="phone-mockup__screen">
-                                <div class="chat-demo">
-                                    <div class="chat-demo__message chat-demo__message--bot">
-                                        <div class="chat-demo__avatar" aria-hidden="true">AI</div>
-                                        <div class="chat-demo__content">
-                                            <div class="chat-demo__text">Привет! Я твой ИИ-тренер. Расскажи о цели — соберу персональный план тренировок 💪</div>
-                                        </div>
-                                    </div>
-                                    <div class="chat-demo__message chat-demo__message--user">
-                                        <div class="chat-demo__content">
-                                            <div class="chat-demo__text">Хочу похудеть на 10 кг за 3 месяца</div>
-                                        </div>
-                                    </div>
-                                    <div class="chat-demo__message chat-demo__message--bot">
-                                        <div class="chat-demo__avatar" aria-hidden="true">AI</div>
-                                        <div class="chat-demo__content">
-                                            <div class="chat-demo__text">Учёл анализ фигуры из BodyMetrics: % жира и осанку. Готовлю план на неделю и дневник питания…</div>
-                                            <div class="chat-demo__typing" aria-label="ИИ печатает">
-                                                <span></span><span></span><span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="chat-demo__message chat-demo__message--bot">
-                                        <div class="chat-demo__avatar" aria-hidden="true">AI</div>
-                                        <div class="chat-demo__content chat-demo__content--card">
-                                            <div class="chat-demo__card-title">План готов · 7 дней</div>
-                                            <div class="chat-demo__card-row">🏋️ 4 тренировки · кардио + сила</div>
-                                            <div class="chat-demo__card-row">🥗 Питание с дефицитом калорий</div>
-                                            <div class="chat-demo__card-row">📊 Body Score: 62 → цель 75</div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="hero__showcase-wrap">
+                            <picture>
+                                <source srcset="assets/images/hero-showcase.webp" type="image/webp">
+                                <img src="assets/images/hero-showcase.png" alt="Интерфейс фитнес-бота FitnessAI в Telegram" class="hero__showcase-img" width="1376" height="768" fetchpriority="high">
+                            </picture>
+                            <div class="hero__float hero__float--score" aria-hidden="true">
+                                <span class="hero__float-label">Body Score</span>
+                                <span class="hero__float-value">85<small>/100</small></span>
                             </div>
-                        </div>
-                        <div class="hero__float hero__float--score" aria-hidden="true">
-                            <span class="hero__float-label">Body Score</span>
-                            <span class="hero__float-value">62<small>/100</small></span>
-                        </div>
-                        <div class="hero__float hero__float--fire" aria-hidden="true">
-                            <span class="hero__float-ico">🔥</span> 7 дней подряд
+                            <div class="hero__float hero__float--fire" aria-hidden="true">
+                                <span class="hero__float-ico">🔥</span> 7 дней подряд
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -319,7 +293,13 @@
                             уникальный план тренировок и питания под цель, опыт и особенности — и для похудения, и для набора массы.
                         </p>
                     </article>
-                    <article class="feature-card">
+                    <article class="feature-card feature-card--media">
+                        <div class="feature-card__badge-media">
+                            <picture>
+                                <source srcset="assets/images/nutrition-scanner.webp" type="image/webp">
+                                <img src="assets/images/nutrition-scanner.png" alt="Анализ фото еды с ИИ: калории и БЖУ в дневник питания" class="feature-card__img" width="1200" height="896" loading="lazy">
+                            </picture>
+                        </div>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                         </div>
@@ -453,16 +433,24 @@
                         Без миграций и ручных настроек — экосистема активируется автоматически по Telegram-аккаунту.
                     </p>
                 </div>
-                <div class="partner-promo__card">
-                    <h3>Сценарий из 3 шагов</h3>
-                    <ol>
-                        <li><span>1</span> Фото в @BodyMetrics_bot → AI-анализ фигуры за 30 секунд.</li>
-                        <li><span>2</span> Один тап — ты в FitnessAI с готовым «свежим анализом».</li>
-                        <li><span>3</span> План тренировок и питания пересобирается под твоё реальное тело.</li>
-                    </ol>
-                    <div class="partner-promo__highlight">
-                        <p>Что получаешь</p>
-                        <strong>AI-план тренировок, который видит твоё тело и адаптируется под прогресс</strong>
+                <div class="partner-promo__card-wrap">
+                    <div class="partner-promo__visual">
+                        <picture>
+                            <source srcset="assets/images/ecosystem-showcase.webp" type="image/webp">
+                            <img src="assets/images/ecosystem-showcase.png" alt="AI-анализ фигуры в BodyMetrics и синхронизация с FitnessAI" class="partner-promo__img" width="1264" height="848" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="partner-promo__card">
+                        <h3>Сценарий из 3 шагов</h3>
+                        <ol>
+                            <li><span>1</span> Фото в @BodyMetrics_bot → AI-анализ фигуры за 30 секунд.</li>
+                            <li><span>2</span> Один тап — ты в FitnessAI с готовым «свежим анализом».</li>
+                            <li><span>3</span> План тренировок и питания пересобирается под твоё реальное тело.</li>
+                        </ol>
+                        <div class="partner-promo__highlight">
+                            <p>Что получаешь</p>
+                            <strong>AI-план тренировок, который видит твоё тело и адаптируется под прогресс</strong>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -579,9 +567,9 @@
                             За 2 месяца сбросил 8 кг, следуя рекомендациям фитнес-бота.»
                         </p>
                         <div class="review-card__author">
-                            <span class="review-card__avatar" style="--ava:linear-gradient(135deg,#6366f1,#8b5cf6)" aria-hidden="true">АМ</span>
+                            <img src="assets/images/ava1.webp" alt="Алексей М." class="review-card__avatar-img" width="48" height="48" loading="lazy">
                             <div class="review-card__info">
-                                <div class="review-card__name">Алексей М.</div>
+                                <div class="review-card__name">Алексей М. <span class="review-card__verified" title="Проверенный пользователь">✓</span></div>
                                 <div class="review-card__role">Москва</div>
                             </div>
                         </div>
@@ -599,9 +587,9 @@
                             а дневник питания заполняется сам. Очень точные рекомендации ИИ-тренера.»
                         </p>
                         <div class="review-card__author">
-                            <span class="review-card__avatar" style="--ava:linear-gradient(135deg,#10b981,#059669)" aria-hidden="true">МК</span>
+                            <img src="assets/images/ava2.webp" alt="Мария К." class="review-card__avatar-img" width="48" height="48" loading="lazy">
                             <div class="review-card__info">
-                                <div class="review-card__name">Мария К.</div>
+                                <div class="review-card__name">Мария К. <span class="review-card__verified" title="Проверенный пользователь">✓</span></div>
                                 <div class="review-card__role">Санкт-Петербург</div>
                             </div>
                         </div>
@@ -619,9 +607,9 @@
                             ИИ-тренер учитывает все мои особенности и прогресс.»
                         </p>
                         <div class="review-card__author">
-                            <span class="review-card__avatar" style="--ava:linear-gradient(135deg,#f97316,#ea580c)" aria-hidden="true">ДС</span>
+                            <img src="assets/images/ava3.webp" alt="Дмитрий С." class="review-card__avatar-img" width="48" height="48" loading="lazy">
                             <div class="review-card__info">
-                                <div class="review-card__name">Дмитрий С.</div>
+                                <div class="review-card__name">Дмитрий С. <span class="review-card__verified" title="Проверенный пользователь">✓</span></div>
                                 <div class="review-card__role">Екатеринбург</div>
                             </div>
                         </div>

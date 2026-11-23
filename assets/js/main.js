@@ -1,6 +1,7 @@
 // FitnessAI Bot — landing scripts
 
 document.addEventListener('DOMContentLoaded', function () {
+    initPromoBanner();
     initMobileMenu();
     initSmoothScrolling();
     initFAQ();
@@ -10,25 +11,59 @@ document.addEventListener('DOMContentLoaded', function () {
     initBotNameCopy();
 });
 
+// ---- Promo banner dismiss ----
+function initPromoBanner() {
+    const banner = document.getElementById('promo-banner');
+    const closeBtn = document.getElementById('promo-banner-close');
+    if (!banner || !closeBtn) return;
+
+    if (sessionStorage.getItem('promo_banner_dismissed') === '1') {
+        banner.style.display = 'none';
+    }
+
+    closeBtn.addEventListener('click', function () {
+        banner.style.display = 'none';
+        sessionStorage.setItem('promo_banner_dismissed', '1');
+    });
+}
+
 // ---- Mobile menu ----
 function initMobileMenu() {
     const toggle = document.getElementById('nav-toggle');
     const menu = document.getElementById('nav-menu');
+    const backdrop = document.getElementById('nav-backdrop');
     if (!toggle || !menu) return;
 
     function close() {
         menu.classList.remove('active');
         toggle.classList.remove('active');
+        if (backdrop) backdrop.classList.remove('active');
+        document.body.classList.remove('menu-open');
         toggle.setAttribute('aria-expanded', 'false');
         toggle.setAttribute('aria-label', 'Открыть меню');
     }
 
+    function open() {
+        menu.classList.add('active');
+        toggle.classList.add('active');
+        if (backdrop) backdrop.classList.add('active');
+        document.body.classList.add('menu-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Закрыть меню');
+    }
+
     toggle.addEventListener('click', function () {
-        const open = menu.classList.toggle('active');
-        toggle.classList.toggle('active', open);
-        toggle.setAttribute('aria-expanded', String(open));
-        toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+        const isOpen = menu.classList.contains('active');
+        if (isOpen) {
+            close();
+        } else {
+            open();
+        }
     });
+
+    if (backdrop) {
+        backdrop.addEventListener('click', close);
+    }
 
     menu.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
 
