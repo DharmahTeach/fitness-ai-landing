@@ -103,27 +103,37 @@
     banner.setAttribute('aria-label', 'Согласие на cookie');
     banner.innerHTML =
       '<div class="fa-cookie-card">' +
-        '<p><strong>Cookie для статистики.</strong> Яндекс.Метрика и Google Analytics включатся, если вы согласны. ' +
-        '<a href="cookies.html">Подробнее</a></p>' +
+        '<div class="fa-cookie-body">' +
+          '<p><strong>Файлы cookie:</strong> мы используем аналитику (Яндекс.Метрика и Google Analytics) для улучшения сервиса. ' +
+          '<a href="cookies.html">Подробнее</a></p>' +
+        '</div>' +
         '<div class="fa-cookie-actions">' +
           '<button type="button" class="fa-cookie-ok" data-cookie-choice="granted">Принять</button>' +
           '<button type="button" class="fa-cookie-no" data-cookie-choice="denied">Только необходимые</button>' +
         '</div>' +
+        '<button type="button" class="fa-cookie-close" aria-label="Закрыть" data-cookie-choice="denied">&times;</button>' +
       '</div>';
     document.body.appendChild(banner);
-    document.body.style.paddingBottom = '148px';
+    var h = banner.offsetHeight || 110;
+    document.body.style.paddingBottom = (h + 16) + 'px';
   }
 
   var style = document.createElement('style');
   style.textContent =
-    '#fa-cookie{position:fixed;left:0;right:0;bottom:0;z-index:80;background:linear-gradient(90deg,#4338ca,#7c3aed);border-top:4px solid #facc15;box-shadow:0 -10px 40px rgba(67,56,202,.45)}' +
-    '.fa-cookie-card{max-width:1040px;margin:0 auto;padding:18px 22px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:#fff}' +
-    '#fa-cookie p,#fa-cookie strong{margin:0;color:#fff !important;-webkit-text-fill-color:#fff;font:16px/1.4 Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;max-width:620px}' +
-    '#fa-cookie a{color:#fde68a !important;-webkit-text-fill-color:#fde68a;font-weight:700}' +
-    '.fa-cookie-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}' +
-    '#fa-cookie .fa-cookie-ok{background:#facc15 !important;color:#1e1b4b !important;-webkit-text-fill-color:#1e1b4b;border:0;border-radius:12px;padding:14px 32px;font:800 17px/1 Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;cursor:pointer;box-shadow:0 8px 18px rgba(250,204,21,.45)}' +
-    '#fa-cookie .fa-cookie-no{background:transparent !important;color:#fff !important;-webkit-text-fill-color:#fff;border:0;padding:10px 4px;font:600 13px/1 Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;cursor:pointer;text-decoration:underline}' +
-    '@media(max-width:640px){.fa-cookie-card{align-items:stretch;padding:16px}.fa-cookie-actions{width:100%;flex-direction:column;align-items:stretch}.fa-cookie-ok{width:100%}}';
+    '#fa-cookie{position:fixed;left:50%;transform:translateX(-50%);bottom:24px;width:calc(100% - 48px);max-width:740px;z-index:9990;background:rgba(15,23,42,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.14);border-radius:16px;box-shadow:0 16px 40px -4px rgba(0,0,0,.45),0 0 0 1px rgba(99,102,241,.18);padding:12px 18px;box-sizing:border-box;max-height:calc(100dvh - 32px);overflow-y:auto}' +
+    '#fa-cookie .fa-cookie-card{display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;padding-right:28px}' +
+    '#fa-cookie .fa-cookie-body{flex:1;min-width:0}' +
+    '#fa-cookie p{margin:0;font:13px/1.45 Inter,system-ui,Segoe UI,Roboto,sans-serif;color:#e2e8f0 !important;-webkit-text-fill-color:#e2e8f0}' +
+    '#fa-cookie strong{color:#fff !important;-webkit-text-fill-color:#fff;font-weight:600}' +
+    '#fa-cookie a{color:#a5b4fc !important;-webkit-text-fill-color:#a5b4fc;text-decoration:underline;text-underline-offset:2px;font-weight:500}' +
+    '#fa-cookie a:hover{color:#c7d2fe !important;-webkit-text-fill-color:#c7d2fe}' +
+    '#fa-cookie .fa-cookie-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}' +
+    '#fa-cookie .fa-cookie-ok{background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%) !important;color:#fff !important;-webkit-text-fill-color:#fff;border:none;border-radius:9px;padding:8px 18px;font:600 13px/1 Inter,system-ui,sans-serif;cursor:pointer;box-shadow:0 4px 14px rgba(99,102,241,.4);white-space:nowrap}' +
+    '#fa-cookie .fa-cookie-no{background:rgba(255,255,255,.08) !important;color:#cbd5e1 !important;-webkit-text-fill-color:#cbd5e1;border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:7px 14px;font:500 12px/1 Inter,system-ui,sans-serif;cursor:pointer;text-decoration:none;white-space:nowrap}' +
+    '#fa-cookie .fa-cookie-close{position:absolute;top:50%;transform:translateY(-50%);right:0;width:24px;height:24px;background:transparent;border:none;color:#94a3b8;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:50%;padding:0}' +
+    '#fa-cookie .fa-cookie-close:hover{color:#fff;background:rgba(255,255,255,.1)}' +
+    '@media(max-width:720px){#fa-cookie{width:calc(100% - 20px);left:10px;right:10px;transform:none;bottom:max(10px,env(safe-area-inset-bottom,10px));padding:11px 13px;border-radius:14px}#fa-cookie .fa-cookie-card{flex-direction:column;align-items:stretch;gap:9px;padding-right:22px}#fa-cookie p{font-size:12.5px;line-height:1.38}#fa-cookie .fa-cookie-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}#fa-cookie .fa-cookie-ok,#fa-cookie .fa-cookie-no{width:100%;text-align:center;padding:8px 6px;font-size:12px;display:flex;align-items:center;justify-content:center;border-radius:8px}#fa-cookie .fa-cookie-close{top:0;transform:none;right:0}}' +
+    '@media(max-width:360px){#fa-cookie{width:calc(100% - 12px);left:6px;right:6px;padding:10px 11px}#fa-cookie p{font-size:11.5px;line-height:1.35}#fa-cookie .fa-cookie-actions{gap:6px}#fa-cookie .fa-cookie-ok,#fa-cookie .fa-cookie-no{font-size:11px;padding:7px 4px}}';
   document.head.appendChild(style);
 
   document.addEventListener('click', function (event) {
