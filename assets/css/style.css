@@ -133,6 +133,11 @@ a { color: inherit; }
     color: transparent;
 }
 
+.nowrap {
+    white-space: nowrap;
+    display: inline-block;
+}
+
 /* Accessibility helpers */
 .skip-link {
     position: absolute;
