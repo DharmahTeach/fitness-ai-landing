@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <title>Бот для похудения в Telegram: готовый план меню, тренировки и калории по фото — FitnessAI Bot</title>
+    <meta name="description" content="Как использовать фитнес-бот в Telegram для похудения: персональный план питания и готовое меню, дневник приёмов пищи, подсчёт калорий и БЖУ по фото еды и контроль % жира.">
+    <meta name="author" content="FitnessAI">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://fitness-ai.ru/weight-loss-bot.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Бот для похудения в Telegram: меню, тренировки и анализ фото еды">
+    <meta property="og:description" content="Готовый план питания, дневник приёмов пищи в чате, подсчёт калорий и БЖУ по фото блюда и связка с анализом фигуры.">
+    <meta property="og:image" content="https://fitness-ai.ru/assets/images/nutrition-scanner.png">
+    <meta property="og:url" content="https://fitness-ai.ru/weight-loss-bot.html">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="FitnessAI Bot">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Бот для похудения в Telegram — FitnessAI Bot">
+    <meta name="twitter:description" content="Персональное меню для похудения, дневник питания и калории по фото еды прямо в Telegram.">
+    <meta name="twitter:image" content="https://fitness-ai.ru/assets/images/nutrition-scanner.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/consent.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": "Бот для похудения в Telegram: готовый план меню, тренировки и калории по фото",
+                "description": "Как работает ИИ-бот для похудения @FitnessPlusAI_Bot: составление плана питания, учёт дневника еды, анализ фото блюд и отслеживание динамики % жира.",
+                "inLanguage": "ru-RU",
+                "datePublished": "2026-11-25",
+                "dateModified": "2026-11-25",
+                "mainEntityOfPage": "https://fitness-ai.ru/weight-loss-bot.html",
+                "image": "https://fitness-ai.ru/assets/images/nutrition-scanner.png",
+                "author": { "@type": "Organization", "name": "FitnessAI" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "FitnessAI",
+                    "logo": { "@type": "ImageObject", "url": "https://fitness-ai.ru/assets/images/logo.svg" }
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://fitness-ai.ru/" },
+                    { "@type": "ListItem", "position": 2, "name": "Бот для похудения", "item": "https://fitness-ai.ru/weight-loss-bot.html" }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Как бот для похудения считает калории по фото еды?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Отправьте фотографию блюда ИИ-консультанту в @FitnessPlusAI_Bot (при желании добавьте подпись, например «обед, без масла»). Бот распознает продукты, оценит примерную калорийность и БЖУ, даст комментарий под цель похудения и по вашему подтверждению («да», «запиши») сохранит приём пищи в дневник."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Можно ли получить готовый план меню отдельно от тренировок?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Да. При создании плана через /plan можно выбрать формат «План питания», «План тренировок» или «Комбинированный». В бесплатном тарифе план выдаётся на 7 дней, в Premium — на 30 дней."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Списываются ли бесплатные сообщения за запись еды в дневник?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Нет. Запись приёма пищи через кнопку меню или команду /meal бесплатна, а в чате действует Smart Quota: сообщения с фиксацией приёма пищи или тренировки не расходуют дневной лимит диалога с ИИ-консультантом."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#article-main" class="skip-link">Перейти к материалу</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container" aria-label="Основная навигация">
+            <a href="index.html" class="nav__brand">
+                <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" class="nav__logo" width="34" height="34">
+                <span class="nav__title">FitnessAI Bot</span>
+            </a>
+            <div class="nav__legal-actions">
+                <a href="index.html" class="btn btn--ghost btn--sm">← На главную</a>
+                <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                    </svg>
+                    Запустить бота
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="article-main" class="legal-page">
+        <div class="container">
+            <article class="legal-content">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="index.html">Главная</a>
+                    <span class="breadcrumbs__sep">/</span>
+                    <span>Бот для похудения</span>
+                </nav>
+
+                <span class="article-eyebrow">Питание и снижение веса</span>
+                <h1>Бот для похудения в Telegram: готовый план меню, дневник питания и калории по фото</h1>
+                <div class="last-updated">
+                    <strong>Обновлено:</strong> 25 ноября 2026 года · Время чтения: ~5 мин
+                </div>
+
+                <p class="article-lead">
+                    Устойчивое похудение строится не на жёстких диетах из таблицы, а на понятном дефиците калорий, достаточном количестве белка и регулярной нагрузке. <span class="bot-name" data-bot="@FitnessPlusAI_Bot" title="Нажмите, чтобы скопировать">@FitnessPlusAI_Bot</span> объединяет в одном Telegram-чате персональное меню под цель «Похудение», дневник питания с анализом фото еды и живую корректировку рациона.
+                </p>
+
+                <div class="article-toc">
+                    <div class="article-toc__title">Содержание материала</div>
+                    <ol>
+                        <li><a href="#menu-plan">Готовый план питания и комбинированный план для похудения</a></li>
+                        <li><a href="#food-photo">Как работает подсчёт калорий и БЖУ по фото еды</a></li>
+                        <li><a href="#food-diary">Дневник питания: через чат, команду /meal и сводка за 7 дней</a></li>
+                        <li><a href="#body-fat-tracking">Почему при похудении важно смотреть не только на весы</a></li>
+                        <li><a href="#free-vs-premium">Что бесплатно, а что входит в Premium</a></li>
+                    </ol>
+                </div>
+
+                <h2 id="menu-plan">1. Готовый план меню под ваши параметры и ограничения</h2>
+                <p>
+                    При регистрации в боте вы выбираете цель <strong>«Похудение»</strong> и указываете возраст, рост, вес, уровень активности и особенности здоровья (например, непереносимость продуктов или ограничения по ЖКТ). На основе этих данных нейросеть генерирует один из двух форматов на выбор:
+                </p>
+                <ul>
+                    <li><strong>Только план питания:</strong> готовое меню по дням и приёмам пищи (завтрак, обед, ужин, перекусы) с ориентирами по калориям, белкам, жирам и углеводам.</li>
+                    <li><strong>Комбинированный план:</strong> готовое меню + программа тренировок дома или в зале, согласованные между собой по расходу энергии.</li>
+                </ul>
+                <p>
+                    Если какой-то продукт не подходит или у вас не получилось поужинать по плану, просто напишите об этом ИИ-консультанту — он предложит замену из того, что есть в холодильнике, и запомнит ваши пищевые предпочтения в истории диалога.
+                </p>
+
+                <h2 id="food-photo">2. Подсчёт калорий и БЖУ по фото еды в Telegram</h2>
+                <p>
+                    Взвешивать каждый грамм крупы и вручную искать блюда в громоздких базах — главная причина, почему люди бросают дневник питания через 3–4 дня. В FitnessAI достаточно сфотографировать тарелку и отправить снимок прямо в чат с ботом:
+                </p>
+                <ol>
+                    <li><strong>Отправка фото:</strong> прикрепите фотографию блюда как обычное сообщение. При желании добавьте подпись — например, «обед, жарил на оливковом масле» или «полпорции».</li>
+                    <li><strong>Разбор от ИИ-консультанта:</strong> нейросеть распознает ингредиенты, оценит ориентировочную калорийность и баланс БЖУ и подскажет, как блюдо вписывается в вашу цель похудения.</li>
+                    <li><strong>Сохранение по подтверждению:</strong> бот не засоряет дневник случайными картинками — запись добавляется после вашего короткого подтверждения («да», «запиши в дневник»).</li>
+                </ol>
+
+                <div class="article-callout">
+                    <div class="article-callout__title">Умный контекст на 7 дней</div>
+                    <p>
+                        ИИ-консультант видит ваши записи питания за последнюю неделю. Если вы уже завтракали творогом и обедали курицей с рисом, бот не будет переспрашивать, что вы ели — а сразу подскажет: например, что сегодня не хватает белка или овощей к ужину.
+                    </p>
+                </div>
+
+                <h2 id="food-diary">3. Как вести дневник питания: два быстрых способа</h2>
+                <p>
+                    Помимо анализа фотографий, приёмы пищи удобно фиксировать текстом:
+                </p>
+                <div class="article-grid-2">
+                    <div class="article-mini-card">
+                        <h3>Через меню или /meal</h3>
+                        <p>Нажмите кнопку <strong>«🥗 Записать приём пищи»</strong> в главном меню (или введите <code>/meal</code>), выберите дату (Сегодня / Вчера), тип приёма (Завтрак, Обед, Ужин, Перекус) и опишите блюдо текстом.</p>
+                    </div>
+                    <div class="article-mini-card">
+                        <h3>Прямо в диалоге с ИИ</h3>
+                        <p>Напишите тренеру в чат: «Сегодня на завтрак съел овсянку на молоке с бананом». ИИ зафиксирует запись и благодаря механизму Smart Quota не спишет за это сообщение дневной лимит диалога.</p>
+                    </div>
+                </div>
+                <p>
+                    В разделе <strong>Профиль → Дневник питания</strong> сохраняются последние приёмы пищи. Пользователям Premium также доступна сводка за 7 дней (средняя калорийность в день, средний белок) и короткая рекомендация с учётом цели похудения.
+                </p>
+
+                <h2 id="body-fat-tracking">4. Почему при похудении важен контроль фигуры, а не только весы</h2>
+                <p>
+                    Когда вы тренируетесь и держите умеренный дефицит калорий, вес на весах может стоять на месте из-за задержки воды или укрепления мышц, хотя объёмы и процент жира уже снижаются. Чтобы не терять мотивацию, FitnessAI работает в паре с ботом <a href="body-analysis-telegram.html">@BodyMetrics_bot</a>:
+                </p>
+                <ul>
+                    <li>Раз в 2–4 недели можно оценивать фигуру по фото и отслеживать динамику % жира и осанки на одной шкале («Визуальный прогресс»).</li>
+                    <li>При снижении процента жира или выявлении проблемных зон FitnessAI пересобирает план тренировок и питания с поправкой на реальное тело.</li>
+                    <li>А при накоплении от 3 анализов и 12 тренировок за 60 дней в профиле открывается реалистичный текстовый прогноз на 90 дней без фантастических обещаний.</li>
+                </ul>
+
+                <h2 id="free-vs-premium">5. Что доступно бесплатно, а что открывается в Premium</h2>
+                <div class="cookie-table-wrap">
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Функция для похудения</th>
+                                <th>Бесплатный тариф</th>
+                                <th>Premium (от 100 ₽ за 3 дня)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>План питания / комбинированный</td>
+                                <td>1 раз в неделю, на 7 дней</td>
+                                <td>До 50 в месяц, на 30 дней</td>
+                            </tr>
+                            <tr>
+                                <td>Дневник питания (/meal и чат)</td>
+                                <td>Записи без ограничений (без расчёта калорий)</td>
+                                <td>Подсчёт калорий/БЖУ, сводка за 7 дней и советы по цели</td>
+                            </tr>
+                            <tr>
+                                <td>Анализ фото еды</td>
+                                <td>В пределах дневного лимита диалога (3/день, 8 в 1-й день)</td>
+                                <td>Без ограничений на диалог и фото</td>
+                            </tr>
+                            <tr>
+                                <td>Авто-коррекция плана</td>
+                                <td>—</td>
+                                <td>Раз в 7 дней (или раз в 3 дня после анализа в BodyMetrics)</td>
+                            </tr>
+                            <tr>
+                                <td>Экспорт меню и дневника в PDF</td>
+                                <td>—</td>
+                                <td>До 50 файлов в месяц</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="warning-box">
+                    <h4>Важно о здоровье</h4>
+                    <p>Фитнес-бот даёт информационные рекомендации по питанию и тренировкам и не заменяет врача или диетолога. При хронических заболеваниях, расстройствах пищевого поведения или беременности обязательно проконсультируйтесь со специалистом.</p>
+                </div>
+
+                <div class="article-cta-box">
+                    <h3>Попробуйте план питания и разбор еды по фото</h3>
+                    <p>Начните бесплатно в Telegram без установки приложений. Хотите протестировать полный подсчёт калорий и БЖУ по фото — доступен пробный Premium на 3 дня за 100 ₽ без автосписания.</p>
+                    <div class="article-cta-box__actions">
+                        <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--white" target="_blank" rel="noopener">Открыть FitnessAI в Telegram</a>
+                        <a href="ai-workout-plan.html" class="btn btn--outline-white">Как ИИ строит тренировки</a>
+                    </div>
+                </div>
+
+                <div class="article-related">
+                    <h2>Читайте также</h2>
+                    <div class="article-related__list">
+                        <a href="body-analysis-telegram.html" class="article-related__item">
+                            <strong>Оценка фигуры по фото в Telegram</strong>
+                            <span>Как @BodyMetrics_bot отслеживает % жира, осанку и строит прогноз на 90 дней.</span>
+                        </a>
+                        <a href="subscription-and-payment.html" class="article-related__item">
+                            <strong>Тарифы, бесплатный режим и оплата</strong>
+                            <span>Подробно о бесплатных лимитах, карте, СБП и разовой оплате без автосписаний.</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" width="32" height="32">
+                        <span>FitnessAI Bot</span>
+                    </div>
+                    <p class="footer__description">
+                        Персональный ИИ-тренер в Telegram: план тренировок и питания, дневник и анализ фото.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Материалы</h3>
+                        <a href="ai-workout-plan.html" class="footer__link">ИИ-программа тренировок</a>
+                        <a href="weight-loss-bot.html" class="footer__link">Бот для похудения</a>
+                        <a href="body-analysis-telegram.html" class="footer__link">Оценка фигуры в ТГ</a>
+                        <a href="subscription-and-payment.html" class="footer__link">Тарифы и оплата</a>
+                        <a href="fitness-bot-guide.html" class="footer__link">Что такое фитнес-бот</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Продукт и поддержка</h3>
+                        <a href="index.html#features" class="footer__link">Возможности</a>
+                        <a href="index.html#pricing" class="footer__link">Тарифы</a>
+                        <a href="https://t.me/FitnessPlusAI_support_bot" class="footer__link" target="_blank" rel="noopener">Техподдержка</a>
+                        <a href="mailto:support@fitness-ai.ru" class="footer__link">Email</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Правовая информация</h3>
+                        <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+                        <a href="terms.html" class="footer__link">Условия использования</a>
+                        <a href="cookies.html" class="footer__link">Политика cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 FitnessAI Bot. Все права защищены.</p>
+                <div class="footer__social">
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="footer__social-link" target="_blank" rel="noopener" aria-label="Telegram FitnessAI Bot">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <title>Что такое фитнес-бот в Telegram и чем ИИ-тренер лучше фитнес-приложений — FitnessAI Bot</title>
+    <meta name="description" content="Что такое фитнес-бот (fit bot) в Telegram, как он заменяет отдельные фитнес-приложения для iPhone и Android, какие задачи решает ИИ-тренер и как начать за 1 минуту.">
+    <meta name="author" content="FitnessAI">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://fitness-ai.ru/fitness-bot-guide.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Что такое фитнес-бот в Telegram и как работает ИИ-тренер">
+    <meta property="og:description" content="Сравнение Telegram фитнес-бота с приложениями для iPhone/Android и онлайн-тренерами. План тренировок, питание, фото и Body Score в одном чате.">
+    <meta property="og:image" content="https://fitness-ai.ru/assets/images/hero-showcase.png">
+    <meta property="og:url" content="https://fitness-ai.ru/fitness-bot-guide.html">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="FitnessAI Bot">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Что такое фитнес-бот в Telegram — FitnessAI Bot">
+    <meta name="twitter:description" content="Зачем нужен ИИ фитнес-бот в Telegram, как он работает на iPhone и Android без скачивания приложений.">
+    <meta name="twitter:image" content="https://fitness-ai.ru/assets/images/hero-showcase.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/consent.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": "Что такое фитнес-бот в Telegram и чем ИИ-тренер лучше фитнес-приложений",
+                "description": "Подробный обзор того, как устроен фитнес-бот в Telegram, какие функции ИИ-тренера доступны на iPhone, Android и ПК без установки приложений.",
+                "inLanguage": "ru-RU",
+                "datePublished": "2026-11-25",
+                "dateModified": "2026-11-25",
+                "mainEntityOfPage": "https://fitness-ai.ru/fitness-bot-guide.html",
+                "image": "https://fitness-ai.ru/assets/images/hero-showcase.png",
+                "author": { "@type": "Organization", "name": "FitnessAI" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "FitnessAI",
+                    "logo": { "@type": "ImageObject", "url": "https://fitness-ai.ru/assets/images/logo.svg" }
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://fitness-ai.ru/" },
+                    { "@type": "ListItem", "position": 2, "name": "Что такое фитнес-бот", "item": "https://fitness-ai.ru/fitness-bot-guide.html" }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#article-main" class="skip-link">Перейти к материалу</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container" aria-label="Основная навигация">
+            <a href="index.html" class="nav__brand">
+                <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" class="nav__logo" width="34" height="34">
+                <span class="nav__title">FitnessAI Bot</span>
+            </a>
+            <div class="nav__legal-actions">
+                <a href="index.html" class="btn btn--ghost btn--sm">← На главную</a>
+                <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                    </svg>
+                    Запустить бота
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="article-main" class="legal-page">
+        <div class="container">
+            <article class="legal-content">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="index.html">Главная</a>
+                    <span class="breadcrumbs__sep">/</span>
+                    <span>Что такое фитнес-бот в Telegram</span>
+                </nav>
+
+                <span class="article-eyebrow">Обзор сервиса · Telegram Fit Bot</span>
+                <h1>Что такое фитнес-бот в Telegram и чем ИИ-тренер отличается от фитнес-приложений</h1>
+                <div class="last-updated">
+                    <strong>Обновлено:</strong> 25 ноября 2026 года · Время чтения: ~4 мин
+                </div>
+
+                <p class="article-lead">
+                    Фитнес-бот (часто его также ищут как <em>fit bot</em> или <em>fitness bot</em>) — это интеллектуальный помощник для тренировок и питания, который работает прямо внутри Telegram. Вам не нужно скачивать отдельное приложение из App Store или Google Play, заводить новый пароль и разбираться в перегруженных меню: всё происходит в привычном чате.
+                </p>
+
+                <div class="article-toc">
+                    <div class="article-toc__title">Содержание материала</div>
+                    <ol>
+                        <li><a href="#what-is">Как устроен ИИ фитнес-бот и кому он подходит</a></li>
+                        <li><a href="#comparison">Сравнение: фитнес-бот vs фитнес-приложение vs онлайн-тренер</a></li>
+                        <li><a href="#devices">Работает ли на iPhone, Android и компьютере</a></li>
+                        <li><a href="#first-steps">Что можно сделать в первые 5 минут после запуска</a></li>
+                    </ol>
+                </div>
+
+                <h2 id="what-is">1. Как устроен фитнес-бот FitnessAI</h2>
+                <p>
+                    <span class="bot-name" data-bot="@FitnessPlusAI_Bot" title="Нажмите, чтобы скопировать">@FitnessPlusAI_Bot</span> — это не справочник со статичными статьями, а связка из генератора персональных планов, дневника тренировок и питания, анализатора фотографий и диалогового ИИ-тренера.
+                </p>
+                <ul>
+                    <li><strong>Персонализация вместо шаблонов:</strong> учитываются возраст, рост, вес, цель, уровень опыта, травмы/ограничения и доступный инвентарь (дома или в зале).</li>
+                    <li><strong>Живой диалог с памятью:</strong> если в зале занят тренажёр или нет желания делать конкретное упражнение, напишите в чат — ИИ заменит его и запомнит ваше предпочтение на будущее.</li>
+                    <li><strong>Мультимодальность:</strong> в тот же чат можно отправить фото еды для оценки калорий и БЖУ или фото техники упражнения для проверки безопасности.</li>
+                    <li><strong>Еженедельный AI-коуч:</strong> по воскресеньям бот подводит мягкий итог недели с учётом ваших тренировок и питания (уведомления можно включить или выключить в профиле).</li>
+                </ul>
+
+                <h2 id="comparison">2. Фитнес-бот vs фитнес-приложение vs онлайн-тренер</h2>
+                <div class="cookie-table-wrap">
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Критерий</th>
+                                <th>Обычные фитнес-приложения</th>
+                                <th>Живой онлайн-тренер</th>
+                                <th>FitnessAI Bot в Telegram</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Установка и регистрация</strong></td>
+                                <td>Скачать 100–300 МБ, создать аккаунт, часто нужна зарубежная карта</td>
+                                <td>Созвоны, переписка, таблицы Google Docs</td>
+                                <td>Открывается за 1 секунду в Telegram без установки</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Адаптация под травмы и замену упражнений</strong></td>
+                                <td>Ограниченные фильтры</td>
+                                <td>Индивидуально, ответ за часы</td>
+                                <td>Мгновенно в диалоге, с сохранением в профиль</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Дневник питания и фото еды</strong></td>
+                                <td>Отдельный счётчик калорий</td>
+                                <td>Ручной разбор по фото</td>
+                                <td>Запись в чате и разбор фото блюда в одном окне</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Учёт анализа фигуры</strong></td>
+                                <td>Редко</td>
+                                <td>Визуально по фото</td>
+                                <td>Связка с <a href="body-analysis-telegram.html">@BodyMetrics_bot</a>: % жира, осанка, Body Score</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Стоимость</strong></td>
+                                <td>От 500–1 500 ₽/мес (часто с автосписанием)</td>
+                                <td>От 5 000–15 000 ₽/мес</td>
+                                <td>Бесплатный старт; Premium от 100 ₽ (3 дня) / 300 ₽ в мес без автосписания</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="devices">3. Работает ли на iPhone, Android и ПК</h2>
+                <p>
+                    Поскольку бот запускается внутри Telegram, он одинаково работает на <strong>iPhone (iOS), Android, Windows, macOS и в веб-версии Telegram</strong>. История тренировок, дневник питания, сохранённые планы и PDF-экспорт синхронизируются мгновенно — можно составить план с компьютера, а отмечать подходы с телефона прямо в тренажёрном зале.
+                </p>
+
+                <h2 id="first-steps">4. Что можно сделать за первые 5 минут</h2>
+                <div class="article-grid-2">
+                    <div class="article-mini-card">
+                        <h3>Шаг 1. Старт и демо-план</h3>
+                        <p>Перейдите в <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" target="_blank" rel="noopener">@FitnessPlusAI_Bot</a> и нажмите «Старт». Можно сразу посмотреть демо-план или пройти короткую регистрацию из 5 вопросов.</p>
+                    </div>
+                    <div class="article-mini-card">
+                        <h3>Шаг 2. Персональный план и тренировка</h3>
+                        <p>Выберите тип плана (<a href="ai-workout-plan.html">тренировки</a>, <a href="weight-loss-bot.html">питание</a> или оба сразу), нажмите «Начать тренировку с тренером» и отмечайте подходы прямо в чате.</p>
+                    </div>
+                </div>
+
+                <div class="article-cta-box">
+                    <h3>Запустите ИИ-тренера в Telegram прямо сейчас</h3>
+                    <p>Без установки приложений, без привязки карты и полностью на русском языке.</p>
+                    <div class="article-cta-box__actions">
+                        <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--white" target="_blank" rel="noopener">Открыть @FitnessPlusAI_Bot</a>
+                        <a href="subscription-and-payment.html" class="btn btn--outline-white">Тарифы и бесплатные лимиты</a>
+                    </div>
+                </div>
+
+                <div class="article-related">
+                    <h2>Все руководства FitnessAI</h2>
+                    <div class="article-related__list">
+                        <a href="ai-workout-plan.html" class="article-related__item">
+                            <strong>ИИ-программа тренировок для зала и дома</strong>
+                            <span>Как нейросеть учитывает инвентарь, веса и пересобирает план по итогам недели.</span>
+                        </a>
+                        <a href="weight-loss-bot.html" class="article-related__item">
+                            <strong>Бот для похудения: меню и калории по фото</strong>
+                            <span>Дневник питания в чате, разбор блюд по фото и контроль % жира.</span>
+                        </a>
+                        <a href="body-analysis-telegram.html" class="article-related__item">
+                            <strong>Оценка фигуры по фото в Telegram</strong>
+                            <span>Экосистема @BodyMetrics_bot × FitnessAI: % жира, Body Score и прогноз на 90 дней.</span>
+                        </a>
+                        <a href="subscription-and-payment.html" class="article-related__item">
+                            <strong>Тарифы, бесплатный режим и оплата в РФ</strong>
+                            <span>Цены, карта, СБП, Telegram Stars и отсутствие автосписаний.</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" width="32" height="32">
+                        <span>FitnessAI Bot</span>
+                    </div>
+                    <p class="footer__description">
+                        Персональный ИИ-тренер в Telegram: план тренировок и питания, дневник и анализ фото.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Материалы</h3>
+                        <a href="ai-workout-plan.html" class="footer__link">ИИ-программа тренировок</a>
+                        <a href="weight-loss-bot.html" class="footer__link">Бот для похудения</a>
+                        <a href="body-analysis-telegram.html" class="footer__link">Оценка фигуры в ТГ</a>
+                        <a href="subscription-and-payment.html" class="footer__link">Тарифы и оплата</a>
+                        <a href="fitness-bot-guide.html" class="footer__link">Что такое фитнес-бот</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Продукт и поддержка</h3>
+                        <a href="index.html#features" class="footer__link">Возможности</a>
+                        <a href="index.html#pricing" class="footer__link">Тарифы</a>
+                        <a href="https://t.me/FitnessPlusAI_support_bot" class="footer__link" target="_blank" rel="noopener">Техподдержка</a>
+                        <a href="mailto:support@fitness-ai.ru" class="footer__link">Email</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Правовая информация</h3>
+                        <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+                        <a href="terms.html" class="footer__link">Условия использования</a>
+                        <a href="cookies.html" class="footer__link">Политика cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 FitnessAI Bot. Все права защищены.</p>
+                <div class="footer__social">
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="footer__social-link" target="_blank" rel="noopener" aria-label="Telegram FitnessAI Bot">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

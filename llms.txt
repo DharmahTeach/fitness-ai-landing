@@ -26,6 +26,14 @@ FitnessAI — фитнес-бот в Telegram (@FitnessPlusAI_Bot). Строит
 
 Оплата и активация — внутри Telegram-бота: СБП, банковская карта или Telegram Stars. Все платежи разовые, без автосписания.
 
+## Материалы и руководства
+
+- ИИ-программа тренировок (зал и дом): https://fitness-ai.ru/ai-workout-plan.html
+- Бот для похудения, меню и калории по фото: https://fitness-ai.ru/weight-loss-bot.html
+- Оценка фигуры по фото в Telegram (@BodyMetrics_bot): https://fitness-ai.ru/body-analysis-telegram.html
+- Тарифы, бесплатный доступ и оплата в России (без автосписаний): https://fitness-ai.ru/subscription-and-payment.html
+- Что такое фитнес-бот в Telegram и сравнение с приложениями: https://fitness-ai.ru/fitness-bot-guide.html
+
 ## Ссылки
 
 - Бот: https://t.me/FitnessPlusAI_Bot

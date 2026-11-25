@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <title>Нейросеть для составления плана тренировок: для зала и дома бесплатно — FitnessAI Bot</title>
+    <meta name="description" content="Как составить персональную программу тренировок с помощью ИИ и нейросети в Telegram: для тренажёрного зала и дома, с учётом инвентаря, травм и записанных подходов. Бесплатный старт.">
+    <meta name="author" content="FitnessAI">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://fitness-ai.ru/ai-workout-plan.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Нейросеть для составления плана тренировок: для зала и дома бесплатно">
+    <meta property="og:description" content="ИИ-программа тренировок в Telegram под цель, уровень, инвентарь и ограничения. Как работает генерация, авто-коррекция и сравнение Free vs Premium.">
+    <meta property="og:image" content="https://fitness-ai.ru/assets/images/feature-ai-plan.png">
+    <meta property="og:url" content="https://fitness-ai.ru/ai-workout-plan.html">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="FitnessAI Bot">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Нейросеть для составления плана тренировок — FitnessAI Bot">
+    <meta name="twitter:description" content="ИИ для тренировок в зале и дома в Telegram: персональный план, замена упражнений и пересборка по результатам.">
+    <meta name="twitter:image" content="https://fitness-ai.ru/assets/images/feature-ai-plan.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/consent.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": "Нейросеть для составления плана тренировок: для зала и дома бесплатно",
+                "description": "Подробное руководство о том, как ИИ-тренер FitnessAI в Telegram составляет программу тренировок для зала и дома с учётом инвентаря, травм и реального прогресса.",
+                "inLanguage": "ru-RU",
+                "datePublished": "2026-11-25",
+                "dateModified": "2026-11-25",
+                "mainEntityOfPage": "https://fitness-ai.ru/ai-workout-plan.html",
+                "image": "https://fitness-ai.ru/assets/images/feature-ai-plan.png",
+                "author": { "@type": "Organization", "name": "FitnessAI" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "FitnessAI",
+                    "logo": { "@type": "ImageObject", "url": "https://fitness-ai.ru/assets/images/logo.svg" }
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://fitness-ai.ru/" },
+                    { "@type": "ListItem", "position": 2, "name": "ИИ-программа тренировок", "item": "https://fitness-ai.ru/ai-workout-plan.html" }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Можно ли составить план тренировок с нейросетью бесплатно?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Да. В Telegram-боте @FitnessPlusAI_Bot без регистрации доступен демо-план, а после быстрой анкеты — 1 персональный план в неделю на 7 дней, запись до 30 тренировок в месяц и базовый доступ к ИИ-консультанту бесплатно."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Подходит ли ИИ для тренировок в тренажёрном зале?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Да. При заполнении профиля или в чате укажите инвентарь «В зале» — ИИ-тренер будет считать, что доступны тренажёры, штанги и гантели, а также учтёт записанные рабочие веса и повторения."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Что делать, если упражнение не подходит или есть травма?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Напишите об этом в чат ИИ-консультанту (например: «не могу делать выпады — болит колено» или «замени жим штанги на гантели»). Бот сохранит предпочтение в профиле и больше не будет предлагать это упражнение в новых планах."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#article-main" class="skip-link">Перейти к материалу</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container" aria-label="Основная навигация">
+            <a href="index.html" class="nav__brand">
+                <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" class="nav__logo" width="34" height="34">
+                <span class="nav__title">FitnessAI Bot</span>
+            </a>
+            <div class="nav__legal-actions">
+                <a href="index.html" class="btn btn--ghost btn--sm">← На главную</a>
+                <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                    </svg>
+                    Запустить бота
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="article-main" class="legal-page">
+        <div class="container">
+            <article class="legal-content">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="index.html">Главная</a>
+                    <span class="breadcrumbs__sep">/</span>
+                    <span>ИИ-программа тренировок</span>
+                </nav>
+
+                <span class="article-eyebrow">Руководство · ИИ для тренировок</span>
+                <h1>Нейросеть для создания плана тренировок: как получить программу для зала и дома</h1>
+                <div class="last-updated">
+                    <strong>Обновлено:</strong> 25 ноября 2026 года · Время чтения: ~5 мин
+                </div>
+
+                <p class="article-lead">
+                    Обычный чат с нейросетью выдаёт разовую программу и тут же забывает, сколько вы пожали вчера, какие упражнения вам не нравятся и почему вы пропустили среду. Специализированный ИИ-тренер <span class="bot-name" data-bot="@FitnessPlusAI_Bot" title="Нажмите, чтобы скопировать">@FitnessPlusAI_Bot</span> в Telegram строит план тренировок на основе профиля, инвентаря, истории подходов и даже анализа фигуры — и обновляет программу по вашим реальным результатам.
+                </p>
+
+                <div class="article-toc">
+                    <div class="article-toc__title">Содержание материала</div>
+                    <ol>
+                        <li><a href="#why-bot">Чем специализированный фитнес-ИИ отличается от обычной нейросети</a></li>
+                        <li><a href="#inputs">Какие данные учитывает нейросеть при создании плана</a></li>
+                        <li><a href="#gym-vs-home">ИИ для тренировок в зале и дома: как настроить инвентарь</a></li>
+                        <li><a href="#types-and-limits">3 типа программ: бесплатный план на 7 дней и Premium на 30 дней</a></li>
+                        <li><a href="#auto-update">Авто-коррекция плана и объяснение каждого изменения</a></li>
+                        <li><a href="#faq-plan">Частые вопросы о составлении программы с ИИ</a></li>
+                    </ol>
+                </div>
+
+                <h2 id="why-bot">1. Чем фитнес-бот с ИИ отличается от обычного промпта в нейросеть</h2>
+                <p>
+                    Когда вы просите универсальный чат-бот «составь план тренировок», модель генерирует статичный текст. Через неделю он устаревает: в нём нет ваших рабочих весов, не учтены пропущенные дни, не зафиксированы травмы и замены.
+                </p>
+                <p>
+                    В FitnessAI Bot нейросеть подключена к вашей тренировочной истории:
+                </p>
+                <ul>
+                    <li><strong>Память профиля и чата:</strong> бот учитывает до 50 последних сообщений диалога, ваши параметры и ограничения по здоровью.</li>
+                    <li><strong>Учёт выполненных тренировок:</strong> записи из дневника тренировок (дата, упражнения, подходы, повторения, рабочие веса и длительность) передаются в контекст перед генерацией плана и в диалоге.</li>
+                    <li><strong>Фиксация предпочтений и травм:</strong> если написать в чат «не могу делать приседания со штангой — болит поясница» или «замени берпи на скакалку», бот сохранит это в разделе «Мои предпочтения» и больше не предложит исключённые упражнения.</li>
+                    <li><strong>Кнопка «Начать тренировку с тренером»:</strong> сразу после выдачи плана вы можете открыть интерактивный старт Дня 1 и отчитываться о подходах прямо в чате.</li>
+                </ul>
+
+                <h2 id="inputs">2. Какие параметры учитывает ИИ при создании программы тренировок</h2>
+                <p>
+                    Чтобы план тренировок получился точным, при регистрации (команда <code>/register</code>) достаточно заполнить 5 обязательных пунктов и при желании уточнить ещё 3:
+                </p>
+
+                <div class="cookie-table-wrap">
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Параметр</th>
+                                <th>Допустимые значения</th>
+                                <th>Зачем нужен ИИ-тренеру</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Возраст, рост, вес</strong></td>
+                                <td>13–100 лет, 100–250 см, 30–300 кг</td>
+                                <td>Базовый расчёт нагрузки, объёма и калорийности в комбинированных планах.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Фитнес-цель</strong></td>
+                                <td>Похудение, Набор мышечной массы, Поддержание формы, Выносливость, Сила, Гибкость</td>
+                                <td>Определяет сплит, диапазоны повторений, время отдыха и структуру кардио/силовых блоков.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Уровень подготовки</strong></td>
+                                <td>Начинающий, Средний, Продвинутый</td>
+                                <td>Задаёт сложность упражнений, количество тренировочных дней и стартовый объём подходов.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Особенности и ограничения</strong></td>
+                                <td>Свободный текст до 1000 символов (или «Пропустить»)</td>
+                                <td>Исключает небезопасные движения при проблемах со спиной, коленями, давлением и т.д.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Доступный инвентарь</strong></td>
+                                <td>Свободный текст до 500 символов (например, «гантели 10 кг», «турник» или «В зале»)</td>
+                                <td>Подбирает только те упражнения, которые реально выполнить в ваших условиях.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Пол (опционально)</strong></td>
+                                <td>Мужской / Женский / Другое / Не указывать</td>
+                                <td>Уточняет расчёт БЖУ и акценты нагрузки; при пропуске используется нейтральный расчёт.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="article-callout article-callout--green">
+                    <div class="article-callout__title">Body-aware планирование с @BodyMetrics_bot</div>
+                    <p>
+                        Если вы предварительно сделали разбор фигуры по фото в связанном боте <a href="body-analysis-telegram.html">@BodyMetrics_bot</a>, FitnessAI автоматически подтягивает процент жира, оценку осанки, пропорции и слабые зоны. Тогда нейросеть строит план не только по цифрам из анкеты, но и по реальному состоянию тела.
+                    </p>
+                </div>
+
+                <h2 id="gym-vs-home">3. ИИ для тренировок в зале и дома: в чём разница настройки</h2>
+                <p>
+                    Одна и та же нейросеть умеет собирать программы под совершенно разные условия — всё зависит от поля «Доступный инвентарь» и ваших уточнений в диалоге:
+                </p>
+                <div class="article-grid-2">
+                    <div class="article-mini-card">
+                        <h3>В тренажёрном зале</h3>
+                        <p>Укажите в инвентаре слово <strong>«В зале»</strong> — для ИИ это сигнал, что доступны тренажёры, стойки, блоки, штанги и весь ряд гантелей. В чат можно писать конкретные рабочие веса (например, «жим лёжа 60 кг 3×8»), и следующий план учтёт прогрессию.</p>
+                    </div>
+                    <div class="article-mini-card">
+                        <h3>Дома или на улице</h3>
+                        <p>Перечислите, что есть под рукой: «только собственный вес», «коврик и резинки», «разборные гантели до 16 кг» или «турник и брусья». Бот не вставит в домашний план тренажёр Смита или гравитрон.</p>
+                    </div>
+                </div>
+                <p>
+                    Поменять место тренировок можно в любой момент через меню <strong>Профиль → Редактировать профиль</strong> или прямо в сообщении ИИ-консультанту (например: «на этой неделе тренируюсь дома без инвентаря»).
+                </p>
+
+                <h2 id="types-and-limits">4. Какие планы создаёт нейросеть и что доступно бесплатно</h2>
+                <p>
+                    В команде <code>/plan</code> и разделе «Мой план» доступны 3 формата программ:
+                </p>
+                <ul>
+                    <li><strong>План тренировок</strong> — расписание по дням недели, упражнения, подходы, повторения, отдых и рекомендации по технике.</li>
+                    <li><strong>План питания</strong> — структура приёмов пищи и рекомендации под вашу цель.</li>
+                    <li><strong>Комбинированный план</strong> — тренировки + питание в одном документе.</li>
+                </ul>
+                <p>
+                    <strong>Бесплатно (без карты и регистрации):</strong> гостю сразу доступен <strong>демо-план</strong>. После быстрой регистрации открывается <strong>1 персональный план в неделю длительностью 7 дней</strong>, запись до 30 тренировок в месяц и диалог с ИИ-консультантом (3 сообщения в день, а в первые 24 часа после регистрации — расширенный Welcome-буст до 8 сообщений). Причём сообщения, в которых вы просто отчитываетесь о тренировке («сделал 3×12 подтягиваний»), не тратят дневной лимит диалога.
+                </p>
+                <p>
+                    <strong>В тарифе Premium:</strong> доступны планы на <strong>30 дней</strong> (до 50 генераций в месяц), экспорт любой программы и тренировочного дневника в <strong>PDF</strong>, безлимитный диалог с ИИ-тренером и проверка техники упражнений по фото. Подробнее обо всех тарифах — в разделе <a href="subscription-and-payment.html">оплаты и подписки</a>.
+                </p>
+
+                <h2 id="auto-update">5. Авто-коррекция плана по результатам недели</h2>
+                <p>
+                    Главная проблема большинства программ из интернета — отсутствие адаптации. В Premium-профиле FitnessAI есть кнопка <strong>«Обновить план по результатам»</strong>:
+                </p>
+                <ul>
+                    <li>Раз в 7 дней (или раз в 3 дня, если в @BodyMetrics_bot появился свежий анализ фигуры) бот пересобирает актуальный план с учётом реально выполненных тренировок за неделю.</li>
+                    <li>После обновления бот показывает не общую фразу «план изменён», а подробный список правок (change log) с объяснением причин: например, почему снижен объём на ноги или добавлен вес в базовом движении.</li>
+                </ul>
+
+                <h2 id="faq-plan">6. Частые вопросы об ИИ-программах тренировок</h2>
+                <div class="article-faq">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>На каком языке составляются планы тренировок?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Все планы тренировок, питания, комбинированные программы и авто-обновления формируются полностью на русском языке с понятными названиями упражнений.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Можно ли экспортировать программу тренировок в PDF?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Да, в тарифе Premium можно выгрузить в PDF как выбранный план тренировок/питания, так и тренировочный дневник за последние 30 дней (до 50 экспортов в месяц).</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Как нейросеть проверяет технику выполнения упражнений?</span>
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Отправьте фото выполнения упражнения прямо в чат с ИИ-консультантом (можно с подписью «оцени технику»). Бот разберёт правильные моменты, укажет на возможные ошибки и даст оценку безопасности.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-cta-box">
+                    <h3>Получите персональный план тренировок за 1 минуту</h3>
+                    <p>Откройте FitnessAI Bot в Telegram, посмотрите демо-план без регистрации или пройдите быструю анкету из 5 вопросов — бесплатно.</p>
+                    <div class="article-cta-box__actions">
+                        <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="btn btn--white" target="_blank" rel="noopener">Составить план в Telegram</a>
+                        <a href="index.html#pricing" class="btn btn--outline-white">Сравнить Free и Premium</a>
+                    </div>
+                </div>
+
+                <div class="article-related">
+                    <h2>Читайте также</h2>
+                    <div class="article-related__list">
+                        <a href="weight-loss-bot.html" class="article-related__item">
+                            <strong>Бот для похудения: меню и фото еды</strong>
+                            <span>Как вести дневник питания в Telegram и считать калории с БЖУ по фото.</span>
+                        </a>
+                        <a href="body-analysis-telegram.html" class="article-related__item">
+                            <strong>Оценка фигуры в Telegram</strong>
+                            <span>Body-aware планы, % жира, Body Score и прогноз формы на 90 дней.</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/images/logo.svg" alt="Логотип FitnessAI Bot" width="32" height="32">
+                        <span>FitnessAI Bot</span>
+                    </div>
+                    <p class="footer__description">
+                        Персональный ИИ-тренер в Telegram: план тренировок и питания, дневник и анализ фото.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Материалы</h3>
+                        <a href="ai-workout-plan.html" class="footer__link">ИИ-программа тренировок</a>
+                        <a href="weight-loss-bot.html" class="footer__link">Бот для похудения</a>
+                        <a href="body-analysis-telegram.html" class="footer__link">Оценка фигуры в ТГ</a>
+                        <a href="subscription-and-payment.html" class="footer__link">Тарифы и оплата</a>
+                        <a href="fitness-bot-guide.html" class="footer__link">Что такое фитнес-бот</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Продукт и поддержка</h3>
+                        <a href="index.html#features" class="footer__link">Возможности</a>
+                        <a href="index.html#pricing" class="footer__link">Тарифы</a>
+                        <a href="https://t.me/FitnessPlusAI_support_bot" class="footer__link" target="_blank" rel="noopener">Техподдержка</a>
+                        <a href="mailto:support@fitness-ai.ru" class="footer__link">Email</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Правовая информация</h3>
+                        <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+                        <a href="terms.html" class="footer__link">Условия использования</a>
+                        <a href="cookies.html" class="footer__link">Политика cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 FitnessAI Bot. Все права защищены.</p>
+                <div class="footer__social">
+                    <a href="https://t.me/FitnessPlusAI_Bot?start=from_fitai_landing" class="footer__social-link" target="_blank" rel="noopener" aria-label="Telegram FitnessAI Bot">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.9.42l-2.49-1.84-1.2 1.16c-.13.13-.24.24-.49.24l.18-2.56 4.63-4.18c.2-.18-.04-.28-.31-.1l-5.72 3.6-2.46-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.1.7.8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
